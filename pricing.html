@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | EQUDATOR</title>
+    
+    <!-- Shared Styles and Configuration -->
+    <link rel="stylesheet" href="shared-styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="shared-config.js"></script>
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-navy-black text-white min-h-screen">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-navy-black/80 backdrop-blur-md border-b border-deep-turquoise/30">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <img src="assets/images/Equdator _Logo.jpg" alt="EQUDATOR Logo" class="w-10 h-10 rounded-lg">
+                    <span class="text-2xl font-bold text-primary-teal">EQUDATOR</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Home</a>
+                    
+                    <!-- Product Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-300 hover:text-primary-teal transition duration-200 flex items-center">
+                            Product
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-charcoal-purple/95 backdrop-blur-md rounded-lg border border-charcoal-purple opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="product.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-t-lg transition duration-200">Platform Overview</a>
+                            <a href="rrrc.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 transition duration-200">RRR Calculator</a>
+                            <a href="simulation.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-b-lg transition duration-200">Trading Simulation</a>
+                        </div>
+                    </div>
+
+                    <a href="market.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Market</a>
+                    <a href="pricing.html" class="text-primary-teal hover:text-golden-yellow transition duration-200">Pricing</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Contact</a>
+                    
+                    <!-- About Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-300 hover:text-primary-teal transition duration-200 flex items-center">
+                            About
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-charcoal-purple/95 backdrop-blur-md rounded-lg border border-charcoal-purple opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="about.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-t-lg transition duration-200">Company</a>
+                            <a href="team.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-b-lg transition duration-200">Team</a>
+                        </div>
+                    </div>
+
+                    <!-- More Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-300 hover:text-primary-teal transition duration-200 flex items-center">
+                            More
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-charcoal-purple/95 backdrop-blur-md rounded-lg border border-charcoal-purple opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="varsity.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-t-lg transition duration-200">Varsity</a>
+                            <a href="docs.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-b-lg transition duration-200">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Auth Buttons -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="login.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Login</a>
+                    <a href="signup.html" class="py-2 px-6 rounded-lg bg-primary-teal text-white hover:bg-deep-turquoise transition duration-300 shadow-lg shadow-primary-teal/20">Sign Up</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-gray-300 hover:text-primary-teal" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="lg:hidden hidden" id="mobile-menu">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="index.html" class="block py-2 text-gray-300 hover:text-primary-teal">Home</a>
+                    <a href="product.html" class="block py-2 text-gray-300 hover:text-primary-teal">Product</a>
+                    <a href="rrrc.html" class="block py-2 text-gray-300 hover:text-primary-teal pl-4">RRR Calculator</a>
+                    <a href="simulation.html" class="block py-2 text-gray-300 hover:text-primary-teal pl-4">Simulation</a>
+                    <a href="market.html" class="block py-2 text-gray-300 hover:text-primary-teal">Market</a>
+                    <a href="pricing.html" class="block py-2 text-primary-teal">Pricing</a>
+                    <a href="contact.html" class="block py-2 text-gray-300 hover:text-primary-teal">Contact</a>
+                    <a href="about.html" class="block py-2 text-gray-300 hover:text-primary-teal">About</a>
+                    <a href="team.html" class="block py-2 text-gray-300 hover:text-primary-teal pl-4">Team</a>
+                    <a href="varsity.html" class="block py-2 text-gray-300 hover:text-primary-teal">Varsity</a>
+                    <a href="docs.html" class="block py-2 text-gray-300 hover:text-primary-teal">Documentation</a>
+                    <div class="pt-4 border-t border-charcoal-purple">
+                        <a href="login.html" class="block py-2 text-gray-300 hover:text-primary-teal">Login</a>
+                        <a href="signup.html" class="block py-2 text-primary-teal">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="container mx-auto px-6 py-20 text-center">
+            <div class="animate-fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                    Choose Your <span class="text-primary-teal">Plan</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+                    Select the perfect plan for your trading journey. From beginners to professionals, we have the right tools and features to accelerate your success.
+                </p>
+            </div>
+        </section>
+
+        <!-- Pricing Grid -->
+        <section class="container mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                
+                <!-- Starter Analyst Plan -->
+                <div class="p-8 rounded-xl bg-charcoal-purple/40 backdrop-blur-md border border-deep-turquoise/30 shadow-xl hover:shadow-primary-teal/10 transition duration-500">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Starter Analyst</h3>
+                        <p class="text-gray-300 mb-6">Perfect for beginners exploring algorithmic trading</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-primary-teal">$29</span>
+                            <span class="text-gray-300">/month</span>
+                        </div>
+                        <a href="signup.html" class="block w-full py-3 px-6 text-center rounded-lg border-2 border-charcoal-purple text-gray-300 hover:border-primary-teal hover:text-primary-teal transition duration-300">
+                            Start Free Trial
+                        </a>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-semibold text-white mb-4">Features Included:</h4>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Basic AI Trading Signals</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">RRR Calculator Access</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Basic Market Analysis</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Educational Resources</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Email Support</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Up to 5 Portfolios</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pro Trader Plan (Highlighted) -->
+                <div class="p-8 rounded-xl bg-charcoal-purple/40 backdrop-blur-md border-2 border-primary-teal shadow-xl hover:shadow-primary-teal/20 transition duration-500 relative">
+                    <!-- Popular Badge -->
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-primary-teal text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
+                    </div>
+                    
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Pro Trader</h3>
+                        <p class="text-gray-300 mb-6">Advanced features for serious traders</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-primary-teal">$99</span>
+                            <span class="text-gray-300">/month</span>
+                        </div>
+                        <a href="signup.html" class="block w-full py-4 px-10 text-xl font-medium rounded-lg bg-primary-teal text-white hover:bg-deep-turquoise transition duration-300 shadow-lg shadow-primary-teal/20 transform hover:translate-y-[-1px] active:scale-98 tracking-wide">
+                            Choose Pro Plan
+                        </a>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-semibold text-white mb-4">Everything in Starter, plus:</h4>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Advanced AI Algorithms</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Real-time Trading Simulation</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Advanced Risk Management</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">API Integration</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Priority Support</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Unlimited Portfolios</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Solutions Plan -->
+                <div class="p-8 rounded-xl bg-charcoal-purple/40 backdrop-blur-md border border-deep-turquoise/30 shadow-xl hover:shadow-primary-teal/10 transition duration-500">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Enterprise Solutions</h3>
+                        <p class="text-gray-300 mb-6">Custom solutions for institutions and large teams</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-primary-teal">Custom</span>
+                            <span class="text-gray-300">/quote</span>
+                        </div>
+                        <a href="contact.html" class="block w-full py-3 px-6 text-center rounded-lg border-2 border-charcoal-purple text-gray-300 hover:border-primary-teal hover:text-primary-teal transition duration-300">
+                            Contact Sales
+                        </a>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-semibold text-white mb-4">Everything in Pro, plus:</h4>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Custom AI Model Training</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">White-label Solutions</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">Dedicated Account Manager</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">On-premise Deployment</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">24/7 Phone Support</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-primary-teal mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300">SLA Guarantees</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="container mx-auto px-6 py-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Get answers to common questions about our pricing and features.
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="p-8 rounded-xl bg-charcoal-purple/40 backdrop-blur-md border border-deep-turquoise/30 shadow-xl">
+                    <h4 class="text-xl font-bold text-white mb-4">Can I switch plans anytime?</h4>
+                    <p class="text-gray-300">Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, and billing is prorated accordingly.</p>
+                </div>
+
+                <div class="p-8 rounded-xl bg-charcoal-purple/40 backdrop-blur-md border border-deep-turquoise/30 shadow-xl">
+                    <h4 class="text-xl font-bold text-white mb-4">Is there a free trial available?</h4>
+                    <p class="text-gray-300">Yes, all plans come with a 14-day free trial. No credit card required to start exploring our platform.</p>
+                </div>
+
+                <div class="p-8 rounded-xl bg-charcoal-purple/40 backdrop-blur-md border border-deep-turquoise/30 shadow-xl">
+                    <h4 class="text-xl font-bold text-white mb-4">What payment methods do you accept?</h4>
+                    <p class="text-gray-300">We accept all major credit cards, PayPal, and wire transfers for Enterprise customers. All payments are processed securely.</p>
+                </div>
+
+                <div class="p-8 rounded-xl bg-charcoal-purple/40 backdrop-blur-md border border-deep-turquoise/30 shadow-xl">
+                    <h4 class="text-xl font-bold text-white mb-4">Do you offer refunds?</h4>
+                    <p class="text-gray-300">We offer a 30-day money-back guarantee for all paid plans. If you're not satisfied, contact our support team for a full refund.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="container mx-auto px-6 py-20 text-center">
+            <div class="p-8 rounded-xl bg-charcoal-purple/40 backdrop-blur-md border border-deep-turquoise/30 shadow-xl">
+                <h2 class="text-4xl font-bold text-white mb-6">Ready to Start Trading Smarter?</h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Join thousands of successful traders who trust EQUDATOR for their investment journey.</p>
+                <a href="signup.html" class="py-4 px-10 text-xl font-medium rounded-lg bg-primary-teal text-white hover:bg-deep-turquoise transition duration-300 shadow-lg shadow-primary-teal/20 transform hover:translate-y-[-1px] active:scale-98 tracking-wide">Start Your Free Trial</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-purple/60 border-t border-deep-turquoise/30 mt-20">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-8 h-8 bg-primary-teal rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">E</span>
+                        </div>
+                        <span class="text-2xl font-bold text-primary-teal">EQUDATOR</span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">Revolutionizing trading through AI-powered insights and advanced market analytics.</p>
+                </div>
+
+                <!-- Product & Tools -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Product & Tools</h4>
+                    <ul class="space-y-2">
+                        <li><a href="product.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Platform</a></li>
+                        <li><a href="rrrc.html" class="text-gray-300 hover:text-primary-teal transition duration-200">RRR Calculator</a></li>
+                        <li><a href="simulation.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Trading Simulation</a></li>
+                        <li><a href="market.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Market Data</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary-teal transition duration-200">About Us</a></li>
+                        <li><a href="team.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Team</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Contact</a></li>
+                        <li><a href="pricing.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="docs.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Documentation</a></li>
+                        <li><a href="varsity.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Varsity</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary-teal transition duration-200">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary-teal transition duration-200">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-charcoal-purple mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2025 EQUDATOR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

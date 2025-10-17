@@ -1,0 +1,207 @@
+/* EQUDATOR Website - Shared Styles and Tailwind Configuration */
+/* This file contains the shared Tailwind configuration and common styles for all pages */
+
+/* Import Tailwind CSS from CDN - ensure this loads first */
+@import url('https://cdn.tailwindcss.com');
+
+/* Shared Tailwind Configuration */
+/* Note: This will be applied via JavaScript in each HTML file */
+
+/* ===== SHARED COLOR PALETTE ===== */
+:root {
+    /* Primary Colors */
+    --primary-teal: #40c8b3;           /* Primary Color - vibrant teal */
+    --deep-turquoise: #0d7377;         /* Secondary Color - deep turquoise */
+    --charcoal-purple: #484557;        /* Secondary Color - muted charcoal-purple */
+    --navy-black: #12122a;             /* Accent Color - rich navy-black */
+    --golden-yellow: #ffc00b;          /* Accent Color - bold golden yellow */
+    --pure-white: #FFFFFF;             /* Accent Color - classic white */
+    
+    /* Color Variations */
+    --teal-light: #66d4c4;
+    --teal-dark: #2ca89a;
+    --turquoise-light: #1a9ba0;
+    --purple-light: #5a5768;
+    --navy-light: #1e1e3f;
+    --yellow-light: #ffcd3d;
+}
+
+/* ===== SHARED ANIMATIONS ===== */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--primary-teal); }
+}
+
+/* ===== SHARED UTILITY CLASSES ===== */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 0.6s ease-out;
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+.typing-animation {
+    animation: typing 3.5s steps(40, end);
+}
+
+.blink-caret {
+    animation: blink-caret 1s infinite;
+}
+
+/* ===== SHARED BUTTON STYLES ===== */
+.cta-button {
+    transition: all 0.3s ease;
+    will-change: transform;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px) scale(1.05);
+}
+
+.cta-button:active {
+    transform: scale(0.98);
+}
+
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+/* GPU acceleration for animated elements */
+.cta-button,
+.floating-element,
+.animated-element {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===== RESPONSIVE TYPOGRAPHY ===== */
+@media (max-width: 640px) {
+    .hero-title {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem !important;
+    }
+}
+
+/* ===== SHARED NAVIGATION STYLES ===== */
+.nav-dropdown {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.nav-dropdown.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ===== SHARED MOBILE MENU STYLES ===== */
+.mobile-menu {
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.mobile-menu.active {
+    max-height: 500px;
+}
+
+/* ===== SHARED FORM STYLES ===== */
+.form-input {
+    transition: all 0.3s ease;
+    border: 1px solid var(--charcoal-purple);
+}
+
+.form-input:focus {
+    border-color: var(--primary-teal);
+    box-shadow: 0 0 0 3px rgba(64, 200, 179, 0.1);
+}
+
+/* ===== SHARED CARD STYLES ===== */
+.card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(72, 69, 87, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 8px 16px;
+    background: var(--primary-teal);
+    color: var(--navy-black);
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 6px;
+    top: 7px;
+}
+
+/* Focus indicators */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--primary-teal);
+    outline-offset: 2px;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .print-only {
+        display: block !important;
+    }
+    
+    * {
+        color: black !important;
+        background: white !important;
+    }
+}

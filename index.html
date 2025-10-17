@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EQUDATOR - Revolutionary AI-powered trading platform that transforms market analysis and decision-making through advanced algorithms and intelligent automation.">
+    <meta name="keywords" content="AI trading, financial technology, market analysis, algorithmic trading, fintech, EQUDATOR">
+    <meta name="author" content="EQUDATOR">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="EQUDATOR - AI-Powered Trading Platform">
+    <meta property="og:description" content="Revolutionary AI-powered trading platform that transforms market analysis and decision-making through advanced algorithms.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://equdator.com">
+    
+    <title>Home | EQUDATOR - AI-Powered Trading Platform</title>
+    
+    <!-- Performance & Font Preloading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    
+    <!-- Shared Styles and Configuration -->
+    <link rel="stylesheet" href="shared-styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="shared-config.js"></script>
+    <style>
+        /* ===== PERFORMANCE OPTIMIZATIONS ===== */
+        
+        /* GPU acceleration for animated elements */
+        .tagline-word, .floating-particles .particle, .nav-dot, .scroll-direction {
+            will-change: transform;
+            transform: translateZ(0);
+        }
+        
+        .stock-ticker, .neural-network, .matrix-rain {
+            will-change: transform, opacity;
+            contain: layout style paint;
+        }
+        
+        /* Reduce motion for accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* ===== TAGLINE ANIMATIONS ===== */
+        
+        /* Tagline Animations - Enhanced */
+        .tagline-word {
+            animation: wordGlow 3s ease-in-out infinite alternate;
+            text-shadow: 0 0 10px rgba(64, 200, 179, 0.5);
+        }
+        
+        .tagline-word:nth-child(1) { animation-delay: 0s; }
+        .tagline-word:nth-child(3) { animation-delay: 1s; }
+        .tagline-word:nth-child(5) { animation-delay: 2s; }
+        
+        @keyframes wordGlow {
+            0% { 
+                color: #ffffff;
+                text-shadow: 0 0 10px rgba(64, 200, 179, 0.5), 0 0 20px rgba(64, 200, 179, 0.3);
+                transform: scale(1);
+            }
+            50% { 
+                color: #40c8b3;
+                text-shadow: 0 0 30px rgba(64, 200, 179, 1), 0 0 40px rgba(64, 200, 179, 0.8), 0 0 50px rgba(255, 192, 11, 0.6);
+                transform: scale(1.05);
+            }
+            100% { 
+                color: #ffffff;
+                text-shadow: 0 0 10px rgba(64, 200, 179, 0.5), 0 0 20px rgba(64, 200, 179, 0.3);
+                transform: scale(1);
+            }
+        }
+        
+        /* Enhanced Floating Particles Animation */
+        .particle {
+            animation: float 4s ease-in-out infinite;
+            box-shadow: 0 0 15px currentColor;
+        }
+        
+        .particle:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+            animation-duration: 3s;
+            width: 6px;
+            height: 6px;
+        }
+        
+        .particle:nth-child(2) {
+            top: 60%;
+            right: 15%;
+            animation-delay: 1s;
+            animation-duration: 4s;
+            width: 4px;
+            height: 4px;
+        }
+        
+        .particle:nth-child(3) {
+            top: 30%;
+            left: 80%;
+            animation-delay: 2s;
+            animation-duration: 3.5s;
+            width: 5px;
+            height: 5px;
+        }
+        
+        .particle:nth-child(4) {
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 1.5s;
+            animation-duration: 4.5s;
+            width: 3px;
+            height: 3px;
+        }
+        
+        .particle:nth-child(5) {
+            top: 10%;
+            right: 30%;
+            animation-delay: 0.5s;
+            animation-duration: 3.8s;
+            width: 7px;
+            height: 7px;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) scale(1) rotate(0deg);
+                opacity: 0.6;
+            }
+            50% {
+                transform: translateY(-30px) scale(1.5) rotate(180deg);
+                opacity: 1;
+            }
+        }
+        
+        /* Enhanced Animated Underline */
+        .animated-line {
+            animation: lineSlide 3s ease-in-out infinite;
+            box-shadow: 0 0 10px rgba(64, 200, 179, 0.8);
+        }
+        
+        @keyframes lineSlide {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+                box-shadow: 0 0 5px rgba(64, 200, 179, 0.5);
+            }
+            50% {
+                transform: translateX(0%);
+                opacity: 1;
+                box-shadow: 0 0 20px rgba(64, 200, 179, 1), 0 0 30px rgba(255, 192, 11, 0.8);
+            }
+            100% {
+                transform: translateX(100%);
+                opacity: 0;
+                box-shadow: 0 0 5px rgba(64, 200, 179, 0.5);
+            }
+        }
+        
+        /* Enhanced Separator Animation */
+        .tagline-separator {
+            animation: separatorPulse 2s ease-in-out infinite;
+            text-shadow: 0 0 10px currentColor;
+        }
+        
+        @keyframes separatorPulse {
+            0%, 100% {
+                opacity: 0.6;
+                transform: scale(1);
+                color: #40c8b3;
+                text-shadow: 0 0 10px rgba(64, 200, 179, 0.8);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.3);
+                color: #ffc00b;
+                text-shadow: 0 0 20px rgba(255, 192, 11, 1), 0 0 30px rgba(255, 192, 11, 0.8);
+            }
+        }
+        
+        /* Container Hover Effect */
+        .tagline-container:hover .tagline-word {
+            animation-play-state: paused;
+            color: #40c8b3;
+            text-shadow: 0 0 25px rgba(64, 200, 179, 0.8);
+        }
+        
+        .tagline-container:hover .particle {
+            animation-duration: 1.5s;
+        }
+
+        /* Stock Market Background Elements */
+        .stock-ticker {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .stock-number {
+            position: absolute;
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            font-weight: bold;
+            opacity: 0.8;
+            color: #40c8b3;
+            text-shadow: 0 0 10px rgba(64, 200, 179, 0.8);
+            animation: stockFloat 12s linear infinite;
+            background: rgba(64, 200, 179, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(64, 200, 179, 0.3);
+        }
+
+        .stock-number.positive {
+            color: #00ff88;
+            text-shadow: 0 0 15px rgba(0, 255, 136, 0.9);
+            background: rgba(0, 255, 136, 0.1);
+            border-color: rgba(0, 255, 136, 0.4);
+        }
+
+        .stock-number.negative {
+            color: #ff4444;
+            text-shadow: 0 0 15px rgba(255, 68, 68, 0.9);
+            background: rgba(255, 68, 68, 0.1);
+            border-color: rgba(255, 68, 68, 0.4);
+        }
+
+        @keyframes stockFloat {
+            0% {
+                transform: translateX(-200px) translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            5% {
+                opacity: 0.8;
+            }
+            95% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateX(100vw) translateY(-200px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* ===== DYNAMIC STOCK ANIMATIONS ===== */
+        
+        /* Diagonal Movement */
+        .diagonal-1 { animation: diagonalMove 20s linear infinite; }
+        @keyframes diagonalMove {
+            0% { transform: translateX(-200px) translateY(100vh); opacity: 0; }
+            10% { opacity: 0.9; }
+            90% { opacity: 0.9; }
+            100% { transform: translateX(100vw) translateY(-100px); opacity: 0; }
+        }
+
+        /* Curved Path */
+        .curve-1 { animation: curvePath 18s ease-in-out infinite; }
+        @keyframes curvePath {
+            0% { transform: translateX(-200px) translateY(100vh) rotate(0deg); opacity: 0; }
+            25% { transform: translateX(25vw) translateY(70vh) rotate(90deg); opacity: 0.8; }
+            50% { transform: translateX(50vw) translateY(30vh) rotate(180deg); opacity: 1; }
+            75% { transform: translateX(75vw) translateY(10vh) rotate(270deg); opacity: 0.8; }
+            100% { transform: translateX(100vw) translateY(-50px) rotate(360deg); opacity: 0; }
+        }
+
+        /* Zigzag Pattern */
+        .zigzag-1 { animation: zigzagMove 22s linear infinite; }
+        @keyframes zigzagMove {
+            0% { transform: translateX(-200px) translateY(100vh); opacity: 0; }
+            12.5% { transform: translateX(10vw) translateY(80vh); opacity: 0.7; }
+            25% { transform: translateX(20vw) translateY(60vh); opacity: 1; }
+            37.5% { transform: translateX(30vw) translateY(80vh); opacity: 0.8; }
+            50% { transform: translateX(40vw) translateY(40vh); opacity: 1; }
+            62.5% { transform: translateX(50vw) translateY(60vh); opacity: 0.9; }
+            75% { transform: translateX(60vw) translateY(20vh); opacity: 1; }
+            87.5% { transform: translateX(80vw) translateY(40vh); opacity: 0.7; }
+            100% { transform: translateX(100vw) translateY(-50px); opacity: 0; }
+        }
+
+        /* Wave Motion */
+        .wave-1 { animation: waveMotion 16s ease-in-out infinite; }
+        @keyframes waveMotion {
+            0% { transform: translateX(-200px) translateY(100vh) scale(0.8); opacity: 0; }
+            20% { transform: translateX(20vw) translateY(50vh) scale(1.2); opacity: 0.9; }
+            40% { transform: translateX(40vw) translateY(80vh) scale(0.9); opacity: 1; }
+            60% { transform: translateX(60vw) translateY(20vh) scale(1.1); opacity: 0.8; }
+            80% { transform: translateX(80vw) translateY(60vh) scale(1); opacity: 0.6; }
+            100% { transform: translateX(100vw) translateY(-100px) scale(0.7); opacity: 0; }
+        }
+
+        /* Spiral Movement */
+        .spiral-1 { animation: spiralMove 25s linear infinite; }
+        @keyframes spiralMove {
+            0% { transform: translateX(-200px) translateY(100vh) rotate(0deg) scale(0.5); opacity: 0; }
+            25% { transform: translateX(25vw) translateY(50vh) rotate(360deg) scale(1.2); opacity: 0.8; }
+            50% { transform: translateX(50vw) translateY(30vh) rotate(720deg) scale(1); opacity: 1; }
+            75% { transform: translateX(75vw) translateY(20vh) rotate(1080deg) scale(0.8); opacity: 0.7; }
+            100% { transform: translateX(100vw) translateY(-50px) rotate(1440deg) scale(0.3); opacity: 0; }
+        }
+
+        /* Bounce Movement */
+        .bounce-1 { animation: bounceMove 19s ease-out infinite; }
+        @keyframes bounceMove {
+            0% { transform: translateX(-200px) translateY(100vh); opacity: 0; }
+            15% { transform: translateX(15vw) translateY(40vh); opacity: 0.8; }
+            30% { transform: translateX(30vw) translateY(70vh); opacity: 1; }
+            45% { transform: translateX(45vw) translateY(25vh); opacity: 0.9; }
+            60% { transform: translateX(60vw) translateY(65vh); opacity: 1; }
+            75% { transform: translateX(75vw) translateY(15vh); opacity: 0.7; }
+            90% { transform: translateX(90vw) translateY(45vh); opacity: 0.5; }
+            100% { transform: translateX(100vw) translateY(-50px); opacity: 0; }
+        }
+
+        /* Random Path Animations */
+        .random-path-1 { animation: randomPath1 21s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes randomPath1 {
+            0% { transform: translateX(-200px) translateY(100vh) rotate(0deg); opacity: 0; }
+            18% { transform: translateX(18vw) translateY(75vh) rotate(65deg); opacity: 0.7; }
+            35% { transform: translateX(35vw) translateY(45vh) rotate(135deg); opacity: 1; }
+            52% { transform: translateX(52vw) translateY(80vh) rotate(200deg); opacity: 0.8; }
+            70% { transform: translateX(70vw) translateY(25vh) rotate(290deg); opacity: 0.9; }
+            85% { transform: translateX(85vw) translateY(55vh) rotate(340deg); opacity: 0.6; }
+            100% { transform: translateX(100vw) translateY(-50px) rotate(400deg); opacity: 0; }
+        }
+
+        .random-path-2 { animation: randomPath2 23s ease-in-out infinite; }
+        @keyframes randomPath2 {
+            0% { transform: translateX(-200px) translateY(100vh) scale(1); opacity: 0; }
+            12% { transform: translateX(12vw) translateY(85vh) scale(1.3); opacity: 0.6; }
+            28% { transform: translateX(28vw) translateY(35vh) scale(0.8); opacity: 1; }
+            45% { transform: translateX(45vw) translateY(75vh) scale(1.1); opacity: 0.8; }
+            63% { transform: translateX(63vw) translateY(15vh) scale(1.2); opacity: 0.9; }
+            78% { transform: translateX(78vw) translateY(65vh) scale(0.9); opacity: 0.7; }
+            92% { transform: translateX(92vw) translateY(35vh) scale(1); opacity: 0.5; }
+            100% { transform: translateX(100vw) translateY(-50px) scale(0.6); opacity: 0; }
+        }
+
+        .random-path-3 { animation: randomPath3 17s linear infinite; }
+        @keyframes randomPath3 {
+            0% { transform: translateX(-200px) translateY(100vh) rotateY(0deg); opacity: 0; }
+            22% { transform: translateX(22vw) translateY(65vh) rotateY(180deg); opacity: 0.8; }
+            40% { transform: translateX(40vw) translateY(85vh) rotateY(360deg); opacity: 1; }
+            58% { transform: translateX(58vw) translateY(30vh) rotateY(540deg); opacity: 0.9; }
+            76% { transform: translateX(76vw) translateY(70vh) rotateY(720deg); opacity: 0.7; }
+            94% { transform: translateX(94vw) translateY(20vh) rotateY(900deg); opacity: 0.4; }
+            100% { transform: translateX(100vw) translateY(-50px) rotateY(1080deg); opacity: 0; }
+        }
+
+        .float-around { animation: floatAround 24s ease-in-out infinite; }
+        @keyframes floatAround {
+            0% { transform: translateX(-200px) translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { transform: translateX(10vw) translateY(60vh) rotate(36deg); opacity: 0.7; }
+            25% { transform: translateX(30vw) translateY(40vh) rotate(90deg); opacity: 1; }
+            40% { transform: translateX(20vw) translateY(80vh) rotate(180deg); opacity: 0.8; }
+            55% { transform: translateX(60vw) translateY(50vh) rotate(270deg); opacity: 1; }
+            70% { transform: translateX(45vw) translateY(25vh) rotate(360deg); opacity: 0.9; }
+            85% { transform: translateX(80vw) translateY(70vh) rotate(450deg); opacity: 0.6; }
+            100% { transform: translateX(100vw) translateY(-50px) rotate(540deg); opacity: 0; }
+        }
+
+        /* ===== DYNAMIC NEURAL ANIMATIONS ===== */
+
+        /* Pulse and Scale */
+        .pulse-scale { animation: pulseScale 8s ease-in-out infinite; }
+        @keyframes pulseScale {
+            0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.6; }
+            25% { transform: scale(1.5) rotate(90deg); opacity: 1; }
+            50% { transform: scale(0.8) rotate(180deg); opacity: 0.8; }
+            75% { transform: scale(1.2) rotate(270deg); opacity: 0.9; }
+        }
+
+        /* Orbital Movement */
+        .orbit-1 { animation: orbit1 15s linear infinite; }
+        @keyframes orbit1 {
+            0% { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+            100% { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+        }
+
+        /* Drift Animation */
+        .drift-1 { animation: drift1 12s ease-in-out infinite; }
+        @keyframes drift1 {
+            0%, 100% { transform: translateX(0) translateY(0); }
+            25% { transform: translateX(30px) translateY(-20px); }
+            50% { transform: translateX(-20px) translateY(25px); }
+            75% { transform: translateX(15px) translateY(-15px); }
+        }
+
+        /* Vibrate Effect */
+        .vibrate-1 { animation: vibrate1 2s linear infinite; }
+        @keyframes vibrate1 {
+            0% { transform: translateX(0) scale(1); }
+            10% { transform: translateX(-2px) scale(1.1); }
+            20% { transform: translateX(2px) scale(0.9); }
+            30% { transform: translateX(-2px) scale(1.05); }
+            40% { transform: translateX(2px) scale(0.95); }
+            50% { transform: translateX(-1px) scale(1.02); }
+            60% { transform: translateX(1px) scale(0.98); }
+            70% { transform: translateX(-1px) scale(1.01); }
+            80% { transform: translateX(1px) scale(0.99); }
+            90% { transform: translateX(-1px) scale(1.005); }
+            100% { transform: translateX(0) scale(1); }
+        }
+
+        /* Vertical Float */
+        .float-vertical { animation: floatVertical 6s ease-in-out infinite; }
+        @keyframes floatVertical {
+            0%, 100% { transform: translateY(0) scale(1); opacity: 0.7; }
+            50% { transform: translateY(-40px) scale(1.2); opacity: 1; }
+        }
+
+        /* Rotate Around */
+        .rotate-around { animation: rotateAround 10s linear infinite; }
+        @keyframes rotateAround {
+            0% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(90deg) scale(1.3); }
+            50% { transform: rotate(180deg) scale(0.8); }
+            75% { transform: rotate(270deg) scale(1.1); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+
+        /* Gentle Sway */
+        .gentle-sway { animation: gentleSway 9s ease-in-out infinite; }
+        @keyframes gentleSway {
+            0%, 100% { transform: translateX(0) rotateZ(0deg); }
+            25% { transform: translateX(20px) rotateZ(5deg); }
+            50% { transform: translateX(0) rotateZ(0deg); }
+            75% { transform: translateX(-20px) rotateZ(-5deg); }
+        }
+
+        /* Blink Fade */
+        .blink-fade { animation: blinkFade 4s ease-in-out infinite; }
+        @keyframes blinkFade {
+            0%, 100% { opacity: 0.3; transform: scale(0.8); }
+            20% { opacity: 1; transform: scale(1.2); }
+            40% { opacity: 0.1; transform: scale(0.9); }
+            60% { opacity: 0.8; transform: scale(1.1); }
+            80% { opacity: 0.5; transform: scale(1); }
+        }
+
+        /* ===== DYNAMIC LINE ANIMATIONS ===== */
+
+        /* Stretch and Rotate */
+        .stretch-rotate { animation: stretchRotate 14s ease-in-out infinite; }
+        @keyframes stretchRotate {
+            0% { transform: scaleX(1) rotate(45deg); opacity: 0.5; }
+            25% { transform: scaleX(2) rotate(135deg); opacity: 1; }
+            50% { transform: scaleX(0.5) rotate(225deg); opacity: 0.7; }
+            75% { transform: scaleX(1.5) rotate(315deg); opacity: 0.9; }
+            100% { transform: scaleX(1) rotate(405deg); opacity: 0.5; }
+        }
+
+        /* Slide and Extend */
+        .slide-extend { animation: slideExtend 11s linear infinite; }
+        @keyframes slideExtend {
+            0% { transform: translateX(0) scaleX(0.2) rotate(-30deg); }
+            30% { transform: translateX(50px) scaleX(1.5) rotate(30deg); }
+            60% { transform: translateX(-30px) scaleX(0.8) rotate(-60deg); }
+            100% { transform: translateX(0) scaleX(0.2) rotate(-30deg); }
+        }
+
+        /* Wave Line */
+        .wave-line { animation: waveLine 13s ease-in-out infinite; }
+        @keyframes waveLine {
+            0%, 100% { transform: rotate(15deg) scaleY(1); }
+            25% { transform: rotate(45deg) scaleY(2); }
+            50% { transform: rotate(-15deg) scaleY(0.5); }
+            75% { transform: rotate(75deg) scaleY(1.5); }
+        }
+
+        /* Pulse Width */
+        .pulse-width { animation: pulseWidth 7s ease-in-out infinite; }
+        @keyframes pulseWidth {
+            0%, 100% { transform: scaleX(1) rotate(-45deg); opacity: 0.6; }
+            50% { transform: scaleX(3) rotate(45deg); opacity: 1; }
+        }
+
+        /* Enhanced Neural Network Background */
+        .neural-network {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .neural-dot {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #40c8b3;
+            border-radius: 50%;
+            opacity: 0.9;
+            box-shadow: 0 0 20px rgba(64, 200, 179, 0.8);
+            animation: neuralPulse 2s ease-in-out infinite;
+        }
+
+        .neural-dot.gold {
+            background: #ffc00b;
+            box-shadow: 0 0 25px rgba(255, 192, 11, 0.9);
+        }
+
+        .neural-dot.turquoise {
+            background: #0d7377;
+            box-shadow: 0 0 20px rgba(13, 115, 119, 0.8);
+        }
+
+        .neural-line {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #40c8b3, #ffc00b, #40c8b3, transparent);
+            opacity: 0.6;
+            animation: neuralFlow 3s ease-in-out infinite;
+            box-shadow: 0 0 10px rgba(64, 200, 179, 0.5);
+        }
+
+        @keyframes neuralPulse {
+            0%, 100% { 
+                transform: scale(1);
+                opacity: 0.9;
+            }
+            50% { 
+                transform: scale(2);
+                opacity: 1;
+            }
+        }
+
+        @keyframes neuralFlow {
+            0% { 
+                transform: scaleX(0);
+                opacity: 0;
+            }
+            50% { 
+                transform: scaleX(1);
+                opacity: 0.8;
+            }
+            100% { 
+                transform: scaleX(0);
+                opacity: 0;
+            }
+        }
+
+        /* Floating Charts - More Visible */
+        .chart-element {
+            position: absolute;
+            opacity: 0.7;
+            animation: chartFloat 8s ease-in-out infinite;
+            pointer-events: none;
+            filter: drop-shadow(0 0 10px rgba(64, 200, 179, 0.6));
+        }
+
+        @keyframes chartFloat {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg) scale(1);
+                opacity: 0.7;
+            }
+            50% {
+                transform: translateY(-50px) rotate(10deg) scale(1.2);
+                opacity: 1;
+            }
+        }
+
+        /* Glowing Orbs */
+        .glowing-orb {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: orbFloat 10s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .orb-teal {
+            background: radial-gradient(circle, rgba(64, 200, 179, 0.8) 0%, rgba(64, 200, 179, 0.2) 50%, transparent 100%);
+            box-shadow: 0 0 40px rgba(64, 200, 179, 0.6);
+        }
+
+        .orb-gold {
+            background: radial-gradient(circle, rgba(255, 192, 11, 0.8) 0%, rgba(255, 192, 11, 0.2) 50%, transparent 100%);
+            box-shadow: 0 0 40px rgba(255, 192, 11, 0.6);
+        }
+
+        .orb-turquoise {
+            background: radial-gradient(circle, rgba(13, 115, 119, 0.8) 0%, rgba(13, 115, 119, 0.2) 50%, transparent 100%);
+            box-shadow: 0 0 40px rgba(13, 115, 119, 0.6);
+        }
+
+        @keyframes orbFloat {
+            0%, 100% {
+                transform: translateY(0px) translateX(0px) scale(1);
+                opacity: 0.6;
+            }
+            25% {
+                transform: translateY(-30px) translateX(20px) scale(1.1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(-60px) translateX(0px) scale(1.2);
+                opacity: 1;
+            }
+            75% {
+                transform: translateY(-30px) translateX(-20px) scale(1.1);
+                opacity: 0.8;
+            }
+        }
+
+        /* Matrix Rain Effect */
+        .matrix-rain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .matrix-column {
+            position: absolute;
+            top: -100px;
+            color: #40c8b3;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            opacity: 0.8;
+            text-shadow: 0 0 10px rgba(64, 200, 179, 0.8);
+            animation: matrixFall linear infinite;
+        }
+
+        @keyframes matrixFall {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+            }
+            90% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        /* Shooting Stars */
+        .shooting-star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #fff, 0 0 20px #40c8b3, 0 0 30px #40c8b3;
+            animation: shootingStar 3s linear infinite;
+            pointer-events: none;
+        }
+
+        .shooting-star::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 1px;
+            background: linear-gradient(90deg, #40c8b3, transparent);
+            transform: translateX(-150px) rotate(-45deg);
+            opacity: 0.8;
+        }
+
+        @keyframes shootingStar {
+            0% {
+                transform: translateX(-200px) translateY(200px);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(200px) translateY(-200px);
+                opacity: 0;
+            }
+        }
+
+        /* Typing Effect for Description */
+        .typing-text {
+            overflow: hidden;
+            border-right: 2px solid #40c8b3;
+            white-space: nowrap;
+            animation: typing 3.5s steps(40, end), blink-caret 1s infinite;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+        }
+
+        /* Enhanced Card Hover Animations */
+        .feature-card {
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(64, 200, 179, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .feature-card:hover::before {
+            left: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 25px 50px rgba(64, 200, 179, 0.3), 0 0 30px rgba(64, 200, 179, 0.2);
+            border-color: rgba(64, 200, 179, 0.8);
+        }
+
+        .feature-card:nth-child(2):hover {
+            box-shadow: 0 25px 50px rgba(255, 192, 11, 0.3), 0 0 30px rgba(255, 192, 11, 0.2);
+            border-color: rgba(255, 192, 11, 0.8);
+        }
+
+        .feature-card:nth-child(3):hover {
+            box-shadow: 0 25px 50px rgba(13, 115, 119, 0.3), 0 0 30px rgba(13, 115, 119, 0.2);
+            border-color: rgba(13, 115, 119, 0.8);
+        }
+
+        /* Enhanced Stats Counter Animation */
+        .stat-number {
+            animation: countUp 2s ease-out;
+            animation-delay: 0.5s;
+            animation-fill-mode: both;
+            text-shadow: 0 0 15px currentColor;
+        }
+
+        @keyframes countUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px) scale(0.8);
+                text-shadow: 0 0 5px currentColor;
+            }
+            50% {
+                text-shadow: 0 0 25px currentColor, 0 0 35px currentColor;
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+                text-shadow: 0 0 15px currentColor;
+            }
+        }
+
+        /* Enhanced Button Pulse Animation */
+        .cta-button {
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(64, 200, 179, 0.4);
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .cta-button:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+
+        .cta-button:hover {
+            box-shadow: 0 0 40px rgba(64, 200, 179, 0.8), 0 0 60px rgba(255, 192, 11, 0.6);
+            transform: translateY(-3px) scale(1.05);
+        }
+
+        /* Enhanced Parallax Effect */
+        .parallax-bg {
+            transform: translateZ(0);
+            animation: parallaxMove 25s linear infinite;
+        }
+
+        @keyframes parallaxMove {
+            0% { transform: translateX(0) translateY(0) rotate(0deg); }
+            25% { transform: translateX(-15px) translateY(-8px) rotate(1deg); }
+            50% { transform: translateX(0) translateY(-15px) rotate(0deg); }
+            75% { transform: translateX(15px) translateY(-8px) rotate(-1deg); }
+            100% { transform: translateX(0) translateY(0) rotate(0deg); }
+        }
+
+        /* Glow Effects for Headers */
+        .glow-text {
+            text-shadow: 0 0 20px rgba(64, 200, 179, 0.6), 0 0 30px rgba(64, 200, 179, 0.4);
+            animation: textGlow 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 20px rgba(64, 200, 179, 0.6), 0 0 30px rgba(64, 200, 179, 0.4);
+            }
+            100% {
+                text-shadow: 0 0 30px rgba(64, 200, 179, 0.8), 0 0 40px rgba(64, 200, 179, 0.6), 0 0 50px rgba(255, 192, 11, 0.4);
+            }
+        }
+
+        /* Scroll Animations */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-out;
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .scroll-reveal-left {
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: all 0.8s ease-out;
+        }
+
+        .scroll-reveal-left.revealed {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .scroll-reveal-right {
+            opacity: 0;
+            transform: translateX(100px);
+            transition: all 0.8s ease-out;
+        }
+
+        .scroll-reveal-right.revealed {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .scroll-reveal-scale {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.8s ease-out;
+        }
+
+        .scroll-reveal-scale.revealed {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Smooth Scroll Behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Floating Navigation Dots */
+        .floating-nav {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .floating-nav.visible {
+            opacity: 1;
+        }
+        
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-dot::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+            background: linear-gradient(45deg, #40c8b3, #ffc00b);
+            border-radius: 50%;
+            transition: all 0.4s ease;
+        }
+        
+        .nav-dot.active {
+            background: rgba(64, 200, 179, 0.2);
+            border-color: #40c8b3;
+            box-shadow: 0 0 20px rgba(64, 200, 179, 0.4);
+        }
+        
+        .nav-dot.active::before {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .nav-dot:hover {
+            transform: scale(1.3);
+            background: rgba(255, 192, 11, 0.2);
+            border-color: #ffc00b;
+            box-shadow: 0 0 15px rgba(255, 192, 11, 0.3);
+        }
+        
+        .nav-dot .tooltip {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(18, 18, 42, 0.9);
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(64, 200, 179, 0.3);
+        }
+        
+        .nav-dot:hover .tooltip {
+            opacity: 1;
+            transform: translateY(-50%) translateX(-5px);
+        }
+        
+        /* Scroll Direction Indicator */
+        .scroll-direction {
+            position: fixed;
+            left: 30px;
+            bottom: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, rgba(64, 200, 179, 0.1), rgba(255, 192, 11, 0.1));
+            border: 2px solid rgba(64, 200, 179, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        .scroll-direction:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(64, 200, 179, 0.4);
+            border-color: #40c8b3;
+        }
+        
+        .scroll-direction svg {
+            transition: transform 0.3s ease;
+        }
+        
+        .scroll-direction.scroll-up svg {
+            transform: rotate(180deg);
+        }
+
+        /* Mobile Responsiveness for Floating Nav */
+        @media (max-width: 768px) {
+            .floating-nav {
+                right: 15px;
+                gap: 15px;
+            }
+            
+            .nav-dot {
+                width: 10px;
+                height: 10px;
+            }
+            
+            .nav-dot .tooltip {
+                display: none;
+            }
+            
+            .scroll-direction {
+                left: 15px;
+                bottom: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        /* Parallax Scrolling */
+        .parallax-element {
+            transition: transform 0.1s ease-out;
+        }
+
+        /* Scroll-triggered Counter Animation */
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* Staggered Scroll Animations */
+        .stagger-1 { transition-delay: 0.1s; }
+        .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; }
+        .stagger-4 { transition-delay: 0.4s; }
+        .stagger-5 { transition-delay: 0.5s; }
+
+        /* Scroll-triggered glow effects */
+        .glow-on-scroll {
+            transition: all 0.6s ease;
+        }
+
+        .glow-on-scroll.in-view {
+            box-shadow: 0 0 30px rgba(64, 200, 179, 0.3), 0 0 60px rgba(64, 200, 179, 0.1);
+            border-color: rgba(64, 200, 179, 0.8);
+        }
+
+        /* Floating scroll arrow */
+        .scroll-arrow {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            animation: bounceArrow 2s infinite;
+            cursor: pointer;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .scroll-arrow:hover {
+            opacity: 1;
+        }
+
+        .scroll-arrow.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        @keyframes bounceArrow {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        /* Enhanced hover effects for scrollable elements */
+        .interactive-scroll:hover {
+            transform: translateY(-3px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-navy-black text-white min-h-screen relative overflow-x-hidden">
+    <!-- Floating Navigation Dots -->
+    <nav class="floating-nav" id="floatingNav" aria-label="Page navigation">
+        <div class="nav-dot active" data-target="hero" role="button" tabindex="0" aria-label="Go to home section">
+            <div class="tooltip">Home</div>
+        </div>
+        <div class="nav-dot" data-target="features" role="button" tabindex="0" aria-label="Go to features section">
+            <div class="tooltip">Features</div>
+        </div>
+        <div class="nav-dot" data-target="stats" role="button" tabindex="0" aria-label="Go to statistics section">
+            <div class="tooltip">Statistics</div>
+        </div>
+        <div class="nav-dot" data-target="cta" role="button" tabindex="0" aria-label="Go to get started section">
+            <div class="tooltip">Get Started</div>
+        </div>
+    </nav>
+
+    <!-- Scroll Direction Indicator -->
+    <div class="scroll-direction" id="scrollDirection" onclick="scrollToTop()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#40c8b3" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </div>
+
+    <!-- Floating Scroll Arrow -->
+    <div class="scroll-arrow" id="scrollArrow">
+        <svg class="w-8 h-8 text-primary-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </div>
+    <!-- Animated Background Elements -->
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <!-- Enhanced Stock Market Numbers -->
+        <div class="stock-ticker">
+            <!-- Diagonal Movement Stock Numbers -->
+            <div class="stock-number positive diagonal-1" style="left: 10%; animation-delay: 0s;">$AAPL +2.4%</div>
+            <div class="stock-number positive curve-1" style="left: 25%; animation-delay: 2s;">$TSLA +5.1%</div>
+            <div class="stock-number negative zigzag-1" style="left: 40%; animation-delay: 4s;">$GOOGL -1.2%</div>
+            <div class="stock-number positive wave-1" style="left: 55%; animation-delay: 1s;">$MSFT +3.7%</div>
+            <div class="stock-number positive spiral-1" style="left: 70%; animation-delay: 3s;">$AMZN +1.9%</div>
+            <div class="stock-number positive bounce-1" style="left: 85%; animation-delay: 5s;">$NVDA +8.3%</div>
+            
+            <!-- Random trajectory stocks -->
+            <div class="stock-number negative random-path-1" style="left: 15%; animation-delay: 6s;">$META -0.8%</div>
+            <div class="stock-number positive random-path-2" style="left: 65%; animation-delay: 7s;">$BTC +12.5%</div>
+            <div class="stock-number positive random-path-3" style="left: 35%; animation-delay: 8s;">$ETH +7.2%</div>
+            <div class="stock-number positive float-around" style="left: 80%; animation-delay: 9s;">$SOL +15.8%</div>
+        </div>
+
+        <!-- Dynamic Neural Network -->
+        <div class="neural-network">
+            <!-- Varying Size Neural Dots -->
+            <div class="neural-dot pulse-scale" style="top: 15%; left: 10%; animation-delay: 0s;"></div>
+            <div class="neural-dot gold orbit-1" style="top: 25%; left: 85%; animation-delay: 0.5s;"></div>
+            <div class="neural-dot turquoise drift-1" style="top: 45%; left: 20%; animation-delay: 1s;"></div>
+            <div class="neural-dot vibrate-1" style="top: 60%; left: 75%; animation-delay: 1.5s;"></div>
+            <div class="neural-dot gold float-vertical" style="top: 75%; left: 40%; animation-delay: 2s;"></div>
+            <div class="neural-dot turquoise rotate-around" style="top: 35%; left: 60%; animation-delay: 0.7s;"></div>
+            <div class="neural-dot gentle-sway" style="top: 80%; left: 15%; animation-delay: 1.2s;"></div>
+            <div class="neural-dot gold blink-fade" style="top: 20%; left: 50%; animation-delay: 1.8s;"></div>
+            
+            <!-- Dynamic Neural Lines -->
+            <div class="neural-line stretch-rotate" style="top: 20%; left: 15%; width: 200px; transform: rotate(45deg); animation-delay: 0s;"></div>
+            <div class="neural-line slide-extend" style="top: 50%; left: 65%; width: 150px; transform: rotate(-30deg); animation-delay: 1s;"></div>
+            <div class="neural-line wave-line" style="top: 70%; left: 25%; width: 180px; transform: rotate(15deg); animation-delay: 2s;"></div>
+            <div class="neural-line pulse-width" style="top: 30%; left: 70%; width: 120px; transform: rotate(-45deg); animation-delay: 1.5s;"></div>
+        </div>
+
+        <!-- Glowing Orbs -->
+        <div class="glowing-orb orb-teal" style="width: 100px; height: 100px; top: 10%; right: 5%; animation-delay: 0s; animation-duration: 12s;"></div>
+        <div class="glowing-orb orb-gold" style="width: 80px; height: 80px; bottom: 15%; left: 10%; animation-delay: 2s; animation-duration: 15s;"></div>
+        <div class="glowing-orb orb-turquoise" style="width: 120px; height: 120px; top: 50%; right: 20%; animation-delay: 4s; animation-duration: 18s;"></div>
+        <div class="glowing-orb orb-teal" style="width: 60px; height: 60px; bottom: 30%; right: 40%; animation-delay: 6s; animation-duration: 10s;"></div>
+
+        <!-- Matrix Rain Effect -->
+        <div class="matrix-rain">
+            <div class="matrix-column" style="left: 10%; animation-duration: 8s; animation-delay: 0s;">01101001<br/>11010101<br/>00110011<br/>10101010</div>
+            <div class="matrix-column" style="left: 25%; animation-duration: 10s; animation-delay: 2s;">AI_TRADE<br/>PREDICT<br/>ANALYZE<br/>EXECUTE</div>
+            <div class="matrix-column" style="left: 40%; animation-duration: 9s; animation-delay: 4s;">$$PROFIT$$<br/>BULL_RUN<br/>DIAMOND_HANDS<br/>TO_THE_MOON</div>
+            <div class="matrix-column" style="left: 55%; animation-duration: 11s; animation-delay: 1s;">ML_MODEL<br/>QUANTUM_AI<br/>BLOCKCHAIN<br/>ALGORITHM</div>
+            <div class="matrix-column" style="left: 70%; animation-duration: 8.5s; animation-delay: 3s;">BULLISH<br/>BEARISH<br/>NEUTRAL<br/>VOLATILE</div>
+            <div class="matrix-column" style="left: 85%; animation-duration: 12s; animation-delay: 5s;">10110110<br/>01001001<br/>11100011<br/>00111100</div>
+        </div>
+
+        <!-- Shooting Stars -->
+        <div class="shooting-star" style="top: 20%; animation-delay: 0s; animation-duration: 4s;"></div>
+        <div class="shooting-star" style="top: 40%; animation-delay: 5s; animation-duration: 3s;"></div>
+        <div class="shooting-star" style="top: 60%; animation-delay: 10s; animation-duration: 4.5s;"></div>
+        <div class="shooting-star" style="top: 80%; animation-delay: 15s; animation-duration: 3.5s;"></div>
+
+        <!-- Enhanced Floating Charts -->
+        <div class="chart-element" style="top: 8%; right: 8%;">
+            <svg width="100" height="60" viewBox="0 0 100 60" fill="none">
+                <path d="M5 50 L20 35 L35 40 L50 20 L65 25 L80 15 L95 10" stroke="#40c8b3" stroke-width="3" fill="none"/>
+                <circle cx="20" cy="35" r="3" fill="#40c8b3" opacity="0.8"/>
+                <circle cx="50" cy="20" r="3" fill="#ffc00b" opacity="0.8"/>
+                <circle cx="80" cy="15" r="3" fill="#0d7377" opacity="0.8"/>
+                <circle cx="95" cy="10" r="3" fill="#00ff88" opacity="0.8"/>
+            </svg>
+        </div>
+        
+        <div class="chart-element" style="bottom: 10%; left: 3%; animation-delay: 4s;">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                <circle cx="40" cy="40" r="35" stroke="#40c8b3" stroke-width="3" fill="none" opacity="0.6"/>
+                <circle cx="40" cy="40" r="25" stroke="#ffc00b" stroke-width="3" fill="none" opacity="0.7"/>
+                <circle cx="40" cy="40" r="15" stroke="#0d7377" stroke-width="3" fill="none" opacity="0.8"/>
+                <circle cx="40" cy="40" r="5" fill="#00ff88" opacity="0.9"/>
+            </svg>
+        </div>
+
+        <div class="chart-element" style="top: 30%; left: 20%; animation-delay: 8s;">
+            <svg width="70" height="50" viewBox="0 0 70 50" fill="none">
+                <rect x="10" y="30" width="8" height="15" fill="#40c8b3" opacity="0.7"/>
+                <rect x="25" y="20" width="8" height="25" fill="#ffc00b" opacity="0.7"/>
+                <rect x="40" y="35" width="8" height="10" fill="#ff4444" opacity="0.7"/>
+                <rect x="55" y="15" width="8" height="30" fill="#00ff88" opacity="0.7"/>
+            </svg>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-navy-black/90 backdrop-blur-md border-b border-deep-turquoise shadow-lg shadow-primary-teal/20">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-br from-primary-teal to-golden-yellow rounded-lg flex items-center justify-center shadow-lg">
+                        <span class="text-pure-white font-bold text-xl">E</span>
+                    </div>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-primary-teal to-golden-yellow bg-clip-text text-transparent">EQUDATOR</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-primary-teal hover:text-golden-yellow transition duration-200 font-medium">Home</a>
+                    
+                    <!-- Product Dropdown -->
+                    <div class="relative group">
+                        <button class="text-pure-white hover:text-primary-teal transition duration-200 flex items-center font-medium">
+                            Product
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-charcoal-purple/95 backdrop-blur-md rounded-lg border border-primary-teal/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-xl shadow-deep-turquoise/30">
+                            <a href="product.html" class="block px-4 py-3 text-pure-white hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-t-lg transition duration-200">Platform Overview</a>
+                            <a href="rrrc.html" class="block px-4 py-3 text-pure-white hover:text-golden-yellow hover:bg-golden-yellow/10 transition duration-200">RRR Calculator</a>
+                            <a href="simulation.html" class="block px-4 py-3 text-pure-white hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-b-lg transition duration-200">Trading Simulation</a>
+                        </div>
+                    </div>
+
+                    <a href="market.html" class="text-pure-white hover:text-golden-yellow transition duration-200 font-medium">Market</a>
+                    <a href="pricing.html" class="text-pure-white hover:text-primary-teal transition duration-200 font-medium">Pricing</a>
+                    <a href="contact.html" class="text-pure-white hover:text-deep-turquoise transition duration-200 font-medium">Contact</a>
+                    
+                    <!-- About Dropdown -->
+                    <div class="relative group">
+                        <button class="text-pure-white hover:text-primary-teal transition duration-200 flex items-center font-medium">
+                            About
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-charcoal-purple/95 backdrop-blur-md rounded-lg border border-golden-yellow/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-xl shadow-golden-yellow/20">
+                            <a href="about.html" class="block px-4 py-3 text-pure-white hover:text-golden-yellow hover:bg-golden-yellow/10 rounded-t-lg transition duration-200">Company</a>
+                            <a href="team.html" class="block px-4 py-3 text-pure-white hover:text-primary-teal hover:bg-primary-teal/10 rounded-b-lg transition duration-200">Team</a>
+                        </div>
+                    </div>
+
+                    <!-- More Dropdown -->
+                    <div class="relative group">
+                        <button class="text-pure-white hover:text-primary-teal transition duration-200 flex items-center font-medium">
+                            More
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-charcoal-purple/95 backdrop-blur-md rounded-lg border border-deep-turquoise/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-xl shadow-deep-turquoise/30">
+                            <a href="varsity.html" class="block px-4 py-3 text-pure-white hover:text-deep-turquoise hover:bg-deep-turquoise/20 rounded-t-lg transition duration-200">Varsity</a>
+                            <a href="docs.html" class="block px-4 py-3 text-pure-white hover:text-primary-teal hover:bg-primary-teal/10 rounded-b-lg transition duration-200">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Authentication Navigation -->
+                <div class="hidden lg:flex items-center space-x-4" id="authNavigation">
+                    <!-- Logged out state -->
+                    <div id="authLoggedOut" class="flex items-center space-x-4">
+                        <a href="login.html" class="text-pure-white hover:text-primary-teal transition duration-200 font-medium">Sign In</a>
+                        <a href="signup.html" class="py-2 px-6 rounded-lg bg-gradient-to-r from-primary-teal to-deep-turquoise text-pure-white hover:from-golden-yellow hover:to-primary-teal transition duration-300 shadow-lg shadow-primary-teal/20 font-medium">Get Started</a>
+                        <a href="enhanced-trading-terminal.html" class="text-pure-white hover:text-golden-yellow transition duration-200 font-medium">Try Demo</a>
+                    </div>
+                    
+                    <!-- Logged in state -->
+                    <div id="authLoggedIn" class="hidden items-center space-x-4">
+                        <a href="dashboard.html" class="text-pure-white hover:text-primary-teal transition duration-200 font-medium">Dashboard</a>
+                        <a href="enhanced-trading-terminal.html" class="py-2 px-6 rounded-lg bg-gradient-to-r from-primary-teal to-deep-turquoise text-pure-white hover:from-golden-yellow hover:to-primary-teal transition duration-300 shadow-lg shadow-primary-teal/20 font-medium">Trading Terminal</a>
+                        <div class="relative group">
+                            <button class="flex items-center space-x-2 text-pure-white hover:text-primary-teal transition duration-200">
+                                <img id="navUserAvatar" src="" alt="User" class="w-8 h-8 rounded-full border-2 border-primary-teal">
+                                <span id="navUserName">User</span>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                            <div class="absolute right-0 mt-2 w-48 bg-charcoal-purple/95 backdrop-blur-md rounded-lg border border-primary-teal/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-xl shadow-primary-teal/30 z-50">
+                                <a href="dashboard.html" class="block px-4 py-3 text-pure-white hover:text-primary-teal hover:bg-primary-teal/20 rounded-t-lg transition duration-200">Dashboard</a>
+                                <a href="#" onclick="handleSignOut()" class="block px-4 py-3 text-pure-white hover:text-red-400 hover:bg-red-400/10 rounded-b-lg transition duration-200">Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-gray-300 hover:text-primary-teal" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="lg:hidden hidden" id="mobile-menu">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="index.html" class="block py-2 text-primary-teal">Home</a>
+                    <a href="product.html" class="block py-2 text-gray-300 hover:text-primary-teal">Product</a>
+                    <a href="enhanced-trading-terminal.html" class="block py-2 text-gray-300 hover:text-primary-teal pl-4">Trading Terminal</a>
+                    <a href="demo.html" class="block py-2 text-gray-300 hover:text-primary-teal pl-4">Demo</a>
+                    <a href="pricing.html" class="block py-2 text-gray-300 hover:text-primary-teal">Pricing</a>
+                    <a href="contact.html" class="block py-2 text-gray-300 hover:text-primary-teal">Contact</a>
+                    <a href="about.html" class="block py-2 text-gray-300 hover:text-primary-teal">About</a>
+                    <div class="pt-4 border-t border-charcoal-purple">
+                        <a href="#contact" class="block py-2 text-gray-300 hover:text-primary-teal">Get Started</a>
+                        <a href="enhanced-trading-terminal.html" class="block py-2 text-primary-teal">Try Demo</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20 relative z-10">
+        <!-- Hero Section -->
+        <section id="hero" class="container mx-auto px-6 py-20 text-center relative">
+            <div class="animate-fade-in">
+                <h1 class="text-6xl md:text-8xl font-bold text-pure-white mb-6 animate-slide-up">
+                    Welcome to <span class="bg-gradient-to-r from-primary-teal via-golden-yellow to-deep-turquoise bg-clip-text text-transparent animate-pulse-slow">EQUDATOR</span>
+                </h1>
+                <!-- Company Tagline -->
+                <div class="mb-8 relative">
+                    <div class="tagline-container relative overflow-hidden">
+                        <h2 class="text-2xl md:text-4xl font-extralight text-pure-white tracking-[0.3em] uppercase mb-6 relative z-10">
+                            <span class="tagline-word inline-block transform transition-all duration-700 hover:scale-110" style="animation-delay: 0s;">Predict</span>
+                            <span class="tagline-separator mx-6 text-golden-yellow font-thin animate-pulse">|</span>
+                            <span class="tagline-word inline-block transform transition-all duration-700 hover:scale-110" style="animation-delay: 0.5s;">Understand</span>
+                            <span class="tagline-separator mx-6 text-deep-turquoise font-thin animate-pulse">|</span>
+                            <span class="tagline-word inline-block transform transition-all duration-700 hover:scale-110" style="animation-delay: 1s;">Act</span>
+                        </h2>
+                        
+                        <!-- Floating Particles Background -->
+                        <div class="floating-particles absolute inset-0 pointer-events-none">
+                            <div class="particle absolute w-1 h-1 bg-primary-teal rounded-full opacity-60"></div>
+                            <div class="particle absolute w-1 h-1 bg-golden-yellow rounded-full opacity-40"></div>
+                            <div class="particle absolute w-1 h-1 bg-deep-turquoise rounded-full opacity-50"></div>
+                            <div class="particle absolute w-1 h-1 bg-primary-teal rounded-full opacity-30"></div>
+                            <div class="particle absolute w-1 h-1 bg-golden-yellow rounded-full opacity-70"></div>
+                        </div>
+                        
+                        <!-- Animated Underline -->
+                        <div class="relative w-full h-0.5 mx-auto mt-6 overflow-hidden">
+                            <div class="animated-line absolute h-full bg-gradient-to-r from-transparent via-primary-teal via-golden-yellow to-transparent w-full transform -translate-x-full"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="typing-text max-w-4xl mx-auto mb-12">
+                    <p class="text-xl md:text-2xl text-pure-white/90 leading-relaxed">
+                        Revolutionary <span class="text-primary-teal font-semibold">AI-powered</span> trading platform that transforms <span class="text-golden-yellow font-semibold">market analysis</span> and decision-making through <span class="text-deep-turquoise font-semibold">advanced algorithms</span> and intelligent automation.
+                    </p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 justify-center items-center animate-slide-up" style="animation-delay: 0.5s;">
+                    <a href="#contact" class="cta-button py-4 px-10 text-xl font-medium rounded-lg bg-gradient-to-r from-primary-teal to-golden-yellow text-navy-black hover:from-golden-yellow hover:to-primary-teal transition duration-300 shadow-lg shadow-primary-teal/20 transform hover:translate-y-[-2px] hover:scale-105 active:scale-98 tracking-wide relative overflow-hidden font-bold">Get Started Free</a>
+                    <a href="product.html" class="py-4 px-10 text-xl font-medium rounded-lg border-2 border-deep-turquoise text-pure-white hover:border-golden-yellow hover:text-golden-yellow hover:bg-golden-yellow/10 transition duration-300 transform hover:scale-105">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section id="features" class="container mx-auto px-6 py-20 relative">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-bold text-pure-white mb-6 animate-slide-up glow-text">
+                    Powered by <span class="bg-gradient-to-r from-primary-teal via-golden-yellow to-deep-turquoise bg-clip-text text-transparent">AI Innovation</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-teal to-golden-yellow mx-auto animate-pulse-slow"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-xl bg-gradient-to-br from-charcoal-purple/60 to-navy-black/80 backdrop-blur-md border border-primary-teal/40 shadow-xl hover:shadow-primary-teal/20 transition duration-500 animate-slide-up hover:border-teal-light/60 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary-teal/30 to-teal-light/20 rounded-lg flex items-center justify-center mb-6 shadow-lg shadow-primary-teal/10">
+                        <svg class="w-8 h-8 text-primary-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-pure-white mb-4">AI-Powered Analytics</h3>
+                    <p class="text-pure-white/80 leading-relaxed">Advanced machine learning algorithms analyze market patterns and provide intelligent trading insights in <span class="text-primary-teal font-semibold">real-time</span>.</p>
+                </div>
+
+                <div class="p-8 rounded-xl bg-gradient-to-br from-charcoal-purple/60 to-navy-black/80 backdrop-blur-md border border-golden-yellow/40 shadow-xl hover:shadow-golden-yellow/20 transition duration-500 animate-slide-up hover:border-golden-yellow/60 transform hover:scale-105" style="animation-delay: 0.1s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-golden-yellow/30 to-golden-yellow/20 rounded-lg flex items-center justify-center mb-6 shadow-lg shadow-golden-yellow/10">
+                        <svg class="w-8 h-8 text-golden-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-pure-white mb-4">Lightning Fast</h3>
+                    <p class="text-pure-white/80 leading-relaxed">Execute trades with <span class="text-golden-yellow font-semibold">millisecond precision</span> and access real-time market data with our high-performance infrastructure.</p>
+                </div>
+
+                <div class="p-8 rounded-xl bg-gradient-to-br from-charcoal-purple/60 to-navy-black/80 backdrop-blur-md border border-deep-turquoise/40 shadow-xl hover:shadow-deep-turquoise/20 transition duration-500 animate-slide-up hover:border-deep-turquoise/60 transform hover:scale-105" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-deep-turquoise/30 to-deep-turquoise/20 rounded-lg flex items-center justify-center mb-6 shadow-lg shadow-deep-turquoise/10">
+                        <svg class="w-8 h-8 text-deep-turquoise" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-pure-white mb-4">Secure & Reliable</h3>
+                    <p class="text-pure-white/80 leading-relaxed">Bank-grade security with <span class="text-deep-turquoise font-semibold">99.9% uptime</span> guarantee ensures your investments are always protected and accessible.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="container mx-auto px-6 py-20">
+            <div class="p-8 rounded-xl bg-gradient-to-br from-charcoal-purple/60 to-navy-black/80 backdrop-blur-md border border-gradient-to-r from-primary-teal via-golden-yellow to-deep-turquoise shadow-xl parallax-bg glow-on-scroll scroll-reveal-scale">
+                <div class="text-center mb-12 scroll-reveal">
+                    <h2 class="text-3xl md:text-5xl font-bold text-pure-white mb-4 glow-text">
+                        Trusted by <span class="bg-gradient-to-r from-primary-teal to-golden-yellow bg-clip-text text-transparent">50,000+</span> Traders Worldwide
+                    </h2>
+                </div>
+                
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div class="group scroll-reveal-left stagger-1 interactive-scroll">
+                        <div class="stat-number counter text-4xl font-bold text-primary-teal mb-2 group-hover:scale-110 transition-transform duration-300" data-target="50000">0</div>
+                        <div class="text-pure-white/80">Active Traders</div>
+                        <div class="w-full h-1 bg-gradient-to-r from-transparent via-primary-teal to-transparent mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="group scroll-reveal-left stagger-2 interactive-scroll">
+                        <div class="stat-number counter text-4xl font-bold text-golden-yellow mb-2 group-hover:scale-110 transition-transform duration-300" data-target="2.5">$0B+</div>
+                        <div class="text-pure-white/80">Volume Traded</div>
+                        <div class="w-full h-1 bg-gradient-to-r from-transparent via-golden-yellow to-transparent mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="group scroll-reveal-right stagger-3 interactive-scroll">
+                        <div class="stat-number counter text-4xl font-bold text-deep-turquoise mb-2 group-hover:scale-110 transition-transform duration-300" data-target="99.9">0%</div>
+                        <div class="text-pure-white/80">Uptime</div>
+                        <div class="w-full h-1 bg-gradient-to-r from-transparent via-deep-turquoise to-transparent mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="group scroll-reveal-right stagger-4 interactive-scroll">
+                        <div class="stat-number text-4xl font-bold text-primary-teal mb-2 group-hover:scale-110 transition-transform duration-300">24/7</div>
+                        <div class="text-pure-white/80">Support</div>
+                        <div class="w-full h-1 bg-gradient-to-r from-transparent via-primary-teal to-transparent mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                </div>
+                
+                <!-- Real-time ticker -->
+                <div class="mt-8 pt-8 border-t border-gradient-to-r from-primary-teal/30 via-golden-yellow/30 to-deep-turquoise/30">
+                    <div class="flex justify-center items-center space-x-8 text-sm font-mono">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-primary-teal rounded-full animate-pulse"></div>
+                            <span class="text-primary-teal font-semibold">MARKET OPEN</span>
+                        </div>
+                        <div class="text-golden-yellow">|</div>
+                        <div class="text-pure-white/80">AI MODELS: <span class="text-deep-turquoise font-semibold">ACTIVE</span></div>
+                        <div class="text-gray-300">|</div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-primary-teal rounded-full animate-pulse"></div>
+                            <span class="text-primary-teal">LIVE TRADING</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="container mx-auto px-6 py-20 text-center relative">
+            <!-- Background Animation -->
+            <div class="absolute inset-0 pointer-events-none">
+                <div class="absolute top-10 left-10 w-32 h-32 border border-primary-teal/20 rounded-full animate-spin parallax-element" style="animation-duration: 20s;"></div>
+                <div class="absolute bottom-10 right-10 w-24 h-24 border border-golden-yellow/20 rounded-full animate-spin parallax-element" style="animation-duration: 15s; animation-direction: reverse;"></div>
+            </div>
+            
+            <div class="p-8 rounded-xl bg-gradient-to-br from-charcoal-purple/60 to-navy-black/80 backdrop-blur-md border border-gradient-to-r from-primary-teal via-golden-yellow to-deep-turquoise shadow-xl relative z-10 parallax-bg glow-on-scroll scroll-reveal-scale">
+                <h2 class="text-4xl md:text-6xl font-bold text-pure-white mb-6 glow-text scroll-reveal">
+                    Ready to Transform Your <span class="bg-gradient-to-r from-primary-teal via-golden-yellow to-deep-turquoise bg-clip-text text-transparent">Trading?</span>
+                </h2>
+                <p class="text-xl text-pure-white/80 mb-8 max-w-2xl mx-auto scroll-reveal stagger-1">
+                    Join thousands of successful traders who trust <span class="text-primary-teal font-semibold">EQUDATOR</span> for their investment journey. Start with <span class="text-golden-yellow font-semibold">AI-powered insights</span> today.
+                </p>
+                
+                <!-- Enhanced CTA Button -->
+                <div class="scroll-reveal stagger-2">
+                    <a href="#contact" class="cta-button interactive-scroll inline-block py-4 px-10 text-xl font-medium rounded-lg bg-gradient-to-r from-primary-teal via-golden-yellow to-deep-turquoise text-navy-black hover:from-golden-yellow hover:via-deep-turquoise hover:to-primary-teal transition-all duration-300 shadow-lg shadow-primary-teal/20 transform hover:translate-y-[-2px] hover:scale-105 active:scale-98 tracking-wide relative overflow-hidden group font-bold">
+                        <span class="relative z-10">Get Started Today</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-pure-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </a>
+                </div>
+                
+                <!-- Trust Indicators -->
+                <div class="mt-8 flex justify-center items-center space-x-8 text-sm text-pure-white/70 scroll-reveal stagger-3">
+                    <div class="flex items-center space-x-2 interactive-scroll">
+                        <svg class="w-4 h-4 text-primary-teal" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>No Credit Card Required</span>
+                    </div>
+                    <div class="flex items-center space-x-2 interactive-scroll">
+                        <svg class="w-4 h-4 text-golden-yellow" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>14-Day Free Trial</span>
+                    </div>
+                    <div class="flex items-center space-x-2 interactive-scroll">
+                        <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Cancel Anytime</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-charcoal-purple/80 to-navy-black/90 border-t border-gradient-to-r from-primary-teal via-golden-yellow to-deep-turquoise mt-20">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-8 h-8 bg-gradient-to-br from-primary-teal to-golden-yellow rounded-lg flex items-center justify-center shadow-lg shadow-primary-teal/20">
+                            <span class="text-navy-black font-bold text-xl">E</span>
+                        </div>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-primary-teal to-golden-yellow bg-clip-text text-transparent">EQUDATOR</span>
+                    </div>
+                    <p class="text-pure-white/80 leading-relaxed">Revolutionizing trading through <span class="text-primary-teal font-semibold">AI-powered insights</span> and advanced market analytics.</p>
+                </div>
+
+                <!-- Product & Tools -->
+                <div>
+                    <h4 class="text-lg font-semibold text-pure-white mb-4">Product & Tools</h4>
+                    <ul class="space-y-2">
+                        <li><a href="product.html" class="text-pure-white/70 hover:text-primary-teal transition duration-200">Platform</a></li>
+                        <li><a href="rrrc.html" class="text-pure-white/70 hover:text-golden-yellow transition duration-200">RRR Calculator</a></li>
+                        <li><a href="simulation.html" class="text-pure-white/70 hover:text-deep-turquoise transition duration-200">Trading Simulation</a></li>
+                        <li><a href="market.html" class="text-pure-white/70 hover:text-primary-teal transition duration-200">Market Data</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-lg font-semibold text-pure-white mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-pure-white/70 hover:text-golden-yellow transition duration-200">About Us</a></li>
+                        <li><a href="team.html" class="text-pure-white/70 hover:text-deep-turquoise transition duration-200">Team</a></li>
+                        <li><a href="contact.html" class="text-pure-white/70 hover:text-primary-teal transition duration-200">Contact</a></li>
+                        <li><a href="pricing.html" class="text-pure-white/70 hover:text-golden-yellow transition duration-200">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-semibold text-pure-white mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="docs.html" class="text-pure-white/70 hover:text-primary-teal transition duration-200">Documentation</a></li>
+                        <li><a href="varsity.html" class="text-pure-white/70 hover:text-golden-yellow transition duration-200">Varsity</a></li>
+                        <li><a href="#" class="text-pure-white/70 hover:text-deep-turquoise transition duration-200">Privacy Policy</a></li>
+                        <li><a href="#" class="text-pure-white/70 hover:text-primary-teal transition duration-200">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gradient-to-r from-primary-teal/30 via-golden-yellow/30 to-deep-turquoise/30 mt-8 pt-8 text-center">
+                <p class="text-pure-white/70">&copy; 2025 <span class="text-primary-teal font-semibold">EQUDATOR</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Floating Navigation System
+        function updateFloatingNav() {
+            const sections = ['hero', 'features', 'stats', 'cta'];
+            const navDots = document.querySelectorAll('.nav-dot');
+            const floatingNav = document.getElementById('floatingNav');
+            const scrollDirection = document.getElementById('scrollDirection');
+            
+            // Show/hide floating nav based on scroll position
+            if (window.pageYOffset > 300) {
+                floatingNav.classList.add('visible');
+                scrollDirection.style.opacity = '1';
+            } else {
+                floatingNav.classList.remove('visible');
+                scrollDirection.style.opacity = '0.5';
+            }
+            
+            // Update active dot based on current section
+            let activeIndex = 0;
+            for (let i = 0; i < sections.length; i++) {
+                const section = document.getElementById(sections[i]);
+                if (section) {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                        activeIndex = i;
+                        break;
+                    }
+                }
+            }
+            
+            navDots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === activeIndex);
+            });
+            
+            // Update scroll direction indicator
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > (document.body.scrollHeight - window.innerHeight - 100)) {
+                scrollDirection.classList.add('scroll-up');
+            } else {
+                scrollDirection.classList.remove('scroll-up');
+            }
+        }
+        
+        // Smooth scroll to section
+        function scrollToSection(targetId) {
+            const target = document.getElementById(targetId);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+        
+        // Scroll to top function
+        function scrollToTop() {
+            if (window.pageYOffset > (document.body.scrollHeight - window.innerHeight - 100)) {
+                // If near bottom, scroll to top
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                // Otherwise scroll to bottom
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Scroll Reveal Animation
+        function revealElements() {
+            const reveals = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale');
+            const windowHeight = window.innerHeight;
+            const revealPoint = 100;
+
+            reveals.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = revealPoint;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('revealed');
+                }
+            });
+        }
+
+        // Glow on Scroll Effect
+        function updateGlowEffects() {
+            const glowElements = document.querySelectorAll('.glow-on-scroll');
+            const windowHeight = window.innerHeight;
+
+            glowElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementBottom = element.getBoundingClientRect().bottom;
+
+                if (elementTop < windowHeight && elementBottom > 0) {
+                    element.classList.add('in-view');
+                } else {
+                    element.classList.remove('in-view');
+                }
+            });
+        }
+
+        // Parallax Effect
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.parallax-element');
+            
+            parallaxElements.forEach(element => {
+                const speed = 0.5;
+                const yPos = -(scrolled * speed);
+                element.style.transform = `translateY(${yPos}px)`;
+            });
+        }
+
+        // Counter Animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter[data-target]');
+            
+            counters.forEach(counter => {
+                const target = parseFloat(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+                
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        if (counter.textContent.includes('$')) {
+                            counter.textContent = `$${current.toFixed(1)}B+`;
+                        } else if (counter.textContent.includes('%')) {
+                            counter.textContent = `${current.toFixed(1)}%`;
+                        } else {
+                            counter.textContent = Math.floor(current).toLocaleString() + '+';
+                        }
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        if (counter.textContent.includes('$')) {
+                            counter.textContent = `$${target}B+`;
+                        } else if (counter.textContent.includes('%')) {
+                            counter.textContent = `${target}%`;
+                        } else {
+                            counter.textContent = target.toLocaleString() + 'K+';
+                        }
+                    }
+                };
+                
+                // Start counter when element is visible
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            updateCounter();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+                
+                observer.observe(counter);
+            });
+        }
+
+        // Scroll to section
+        // Scroll Arrow Visibility
+        function updateScrollArrow() {
+            const scrollArrow = document.getElementById('scrollArrow');
+            const scrolled = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            
+            if (scrolled > windowHeight * 0.3) {
+                scrollArrow.classList.add('hidden');
+            } else {
+                scrollArrow.classList.remove('hidden');
+            }
+        }
+
+        // Event Listeners
+        window.addEventListener('scroll', () => {
+            updateFloatingNav();
+            revealElements();
+            updateGlowEffects();
+            updateParallax();
+            updateScrollArrow();
+        });
+
+        window.addEventListener('load', () => {
+            revealElements();
+            animateCounters();
+            updateFloatingNav();
+        });
+
+        // Floating navigation dot click handlers
+        document.querySelectorAll('.nav-dot').forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = dot.getAttribute('data-target');
+                scrollToSection(targetId);
+            });
+            
+            // Keyboard navigation support
+            dot.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    const targetId = dot.getAttribute('data-target');
+                    scrollToSection(targetId);
+                }
+            });
+        });
+
+        // Scroll arrow click handler
+        document.getElementById('scrollArrow').addEventListener('click', () => {
+            scrollToSection('features');
+        });
+
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Add enhanced hover effects
+        document.querySelectorAll('.interactive-scroll').forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                element.style.transform = 'translateY(-5px) scale(1.02)';
+            });
+            
+            element.addEventListener('mouseleave', () => {
+                element.style.transform = '';
+            });
+        });
+    </script>
+    
+    <!-- Auth0 SDK -->
+    <script src="https://cdn.auth0.com/js/auth0/9.18.0/auth0.min.js"></script>
+    
+    <!-- Auth0 Authentication Service -->
+    <script src="auth0-auth.js"></script>
+    
+    <script>
+        // Initialize authentication state on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize auth state
+            updateAuthNavigation();
+            
+            // Listen for auth state changes
+            setTimeout(() => {
+                if (typeof EQUDATOR_AUTH !== 'undefined') {
+                    EQUDATOR_AUTH.onAuthStateChanged((user) => {
+                        updateAuthNavigation();
+                    });
+                }
+            }, 1000);
+        });
+        
+        // Update navigation based on auth state
+        function updateAuthNavigation() {
+            const loggedOutNav = document.getElementById('authLoggedOut');
+            const loggedInNav = document.getElementById('authLoggedIn');
+            const navUserAvatar = document.getElementById('navUserAvatar');
+            const navUserName = document.getElementById('navUserName');
+            
+            // Check for user data in localStorage (set by auth service)
+            const userData = localStorage.getItem('equdator_user');
+            const isLoggedIn = userData !== null;
+            
+            if (isLoggedIn && userData) {
+                const user = JSON.parse(userData);
+                
+                // Show logged in state
+                loggedOutNav.classList.add('hidden');
+                loggedInNav.classList.remove('hidden');
+                loggedInNav.classList.add('flex');
+                
+                // Update user info
+                navUserName.textContent = user.displayName || user.email?.split('@')[0] || 'User';
+                
+                if (user.photoURL) {
+                    navUserAvatar.src = user.photoURL;
+                } else {
+                    // Generate avatar with user initial
+                    const initial = (user.displayName || user.email || 'U').charAt(0).toUpperCase();
+                    navUserAvatar.src = `data:image/svg+xml,${encodeURIComponent(`
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <circle cx="16" cy="16" r="16" fill="#40c8b3"/>
+                            <text x="16" y="21" text-anchor="middle" fill="white" font-size="14" font-weight="bold">
+                                ${initial}
+                            </text>
+                        </svg>
+                    `)}`;
+                }
+            } else {
+                // Show logged out state
+                loggedInNav.classList.add('hidden');
+                loggedInNav.classList.remove('flex');
+                loggedOutNav.classList.remove('hidden');
+            }
+        }
+        
+        // Handle sign out
+        async function handleSignOut() {
+            if (typeof EQUDATOR_AUTH !== 'undefined') {
+                const result = await EQUDATOR_AUTH.signOut();
+                if (result.success) {
+                    console.log('User signed out successfully');
+                    updateAuthNavigation();
+                }
+            }
+        }
+        
+        console.log('✅ Index page with authentication loaded');
+    </script>
+</body>
+</html>

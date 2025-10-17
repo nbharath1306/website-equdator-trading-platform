@@ -1,0 +1,24 @@
+{
+  "name": "equadator-website",
+  "version": "1.0.0",
+  "description": "EQUADATOR AI Trading Platform Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 server.py",
+    "serve": "python3 server.py",
+    "dev": "python3 server.py",
+    "server:node": "npx http-server . -p 8000 -c-1 --cors",
+    "server:python": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "equadator",
+    "trading",
+    "ai",
+    "finance",
+    "website"
+  ],
+  "author": "EQUADATOR Team",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

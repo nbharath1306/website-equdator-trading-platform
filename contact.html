@@ -27,71 +27,28 @@
 </head>
 <body class="bg-navy-black text-white min-h-screen">
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-navy-black/80 backdrop-blur-md border-b border-deep-turquoise/30">
-        <nav class="container mx-auto px-6 py-4">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-navy-black/95 backdrop-blur-md border-b border-deep-turquoise shadow-lg shadow-primary-teal/20">
+        <nav class="container mx-auto px-4 py-3">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
-                <div class="flex items-center space-x-2">
-                    <img src="assets/images/Equdator _Logo.jpg" alt="EQUDATOR Logo" class="w-10 h-10 rounded-lg">
-                    <span class="text-2xl font-bold text-primary-teal">EQUDATOR</span>
+                <div class="flex items-center space-x-3">
+                    <img src="assets/images/Equdator _Logo.jpg" alt="EQUDATOR Logo" class="w-8 h-8 rounded-lg">
+                    <span class="text-xl font-bold bg-gradient-to-r from-primary-teal to-golden-yellow bg-clip-text text-transparent">EQUDATOR</span>
                 </div>
 
                 <!-- Desktop Navigation -->
-                <div class="hidden lg:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center space-x-6">
                     <a href="index.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Home</a>
-                    
-                    <!-- Product Dropdown -->
-                    <div class="relative group">
-                        <button class="text-gray-300 hover:text-primary-teal transition duration-200 flex items-center">
-                            Product
-                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <div class="absolute top-full left-0 mt-2 w-48 bg-charcoal-purple/95 backdrop-blur-md rounded-lg border border-charcoal-purple opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="product.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-t-lg transition duration-200">Platform Overview</a>
-                            <a href="rrrc.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 transition duration-200">RRR Calculator</a>
-                            <a href="simulation.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-b-lg transition duration-200">Trading Simulation</a>
-                        </div>
-                    </div>
-
-                    <a href="market.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Market</a>
+                    <a href="product.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Product</a>
                     <a href="pricing.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Pricing</a>
+                    <a href="about.html" class="text-gray-300 hover:text-primary-teal transition duration-200">About</a>
                     <a href="contact.html" class="text-primary-teal hover:text-golden-yellow transition duration-200">Contact</a>
-                    
-                    <!-- About Dropdown -->
-                    <div class="relative group">
-                        <button class="text-gray-300 hover:text-primary-teal transition duration-200 flex items-center">
-                            About
-                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <div class="absolute top-full left-0 mt-2 w-48 bg-charcoal-purple/95 backdrop-blur-md rounded-lg border border-charcoal-purple opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="about.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-t-lg transition duration-200">Company</a>
-                            <a href="team.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-b-lg transition duration-200">Team</a>
-                        </div>
-                    </div>
-
-                    <!-- More Dropdown -->
-                    <div class="relative group">
-                        <button class="text-gray-300 hover:text-primary-teal transition duration-200 flex items-center">
-                            More
-                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <div class="absolute top-full left-0 mt-2 w-48 bg-charcoal-purple/95 backdrop-blur-md rounded-lg border border-charcoal-purple opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="varsity.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-t-lg transition duration-200">Varsity</a>
-                            <a href="docs.html" class="block px-4 py-3 text-gray-300 hover:text-primary-teal hover:bg-deep-turquoise/20 rounded-b-lg transition duration-200">Documentation</a>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Auth Buttons -->
-                <div class="hidden lg:flex items-center space-x-4">
-                    <a href="login.html" class="text-gray-300 hover:text-primary-teal transition duration-200">Login</a>
-                    <a href="signup.html" class="py-2 px-6 rounded-lg bg-primary-teal text-white hover:bg-deep-turquoise transition duration-300 shadow-lg shadow-primary-teal/20">Sign Up</a>
+                <div class="hidden lg:flex items-center space-x-3">
+                    <a href="login.html" class="text-pure-white hover:text-primary-teal transition duration-200 font-medium">Sign In</a>
+                    <a href="signup.html" class="py-2 px-4 rounded-lg bg-gradient-to-r from-primary-teal to-deep-turquoise text-pure-white hover:from-golden-yellow hover:to-primary-teal transition duration-300 shadow-lg shadow-primary-teal/20 font-medium text-sm">Get Started</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -107,15 +64,9 @@
                 <div class="pt-4 pb-2 space-y-2">
                     <a href="index.html" class="block py-2 text-gray-300 hover:text-primary-teal">Home</a>
                     <a href="product.html" class="block py-2 text-gray-300 hover:text-primary-teal">Product</a>
-                    <a href="rrrc.html" class="block py-2 text-gray-300 hover:text-primary-teal pl-4">RRR Calculator</a>
-                    <a href="simulation.html" class="block py-2 text-gray-300 hover:text-primary-teal pl-4">Simulation</a>
-                    <a href="market.html" class="block py-2 text-gray-300 hover:text-primary-teal">Market</a>
                     <a href="pricing.html" class="block py-2 text-gray-300 hover:text-primary-teal">Pricing</a>
-                    <a href="contact.html" class="block py-2 text-primary-teal">Contact</a>
                     <a href="about.html" class="block py-2 text-gray-300 hover:text-primary-teal">About</a>
-                    <a href="team.html" class="block py-2 text-gray-300 hover:text-primary-teal pl-4">Team</a>
-                    <a href="varsity.html" class="block py-2 text-gray-300 hover:text-primary-teal">Varsity</a>
-                    <a href="docs.html" class="block py-2 text-gray-300 hover:text-primary-teal">Documentation</a>
+                    <a href="contact.html" class="block py-2 text-primary-teal">Contact</a>
                     <div class="pt-4 border-t border-charcoal-purple">
                         <a href="login.html" class="block py-2 text-gray-300 hover:text-primary-teal">Login</a>
                         <a href="signup.html" class="block py-2 text-primary-teal">Sign Up</a>
@@ -212,8 +163,7 @@
                                 </div>
                                 <div class="ml-4">
                                     <h4 class="text-lg font-semibold text-white">Email</h4>
-                                    <p class="text-gray-300">support@equdator.com</p>
-                                    <p class="text-gray-300 text-sm">sales@equdator.com</p>
+                                    <p class="text-gray-300">equidator6@gmail.com</p>
                                 </div>
                             </div>
 
@@ -228,8 +178,8 @@
                                 </div>
                                 <div class="ml-4">
                                     <h4 class="text-lg font-semibold text-white">Phone</h4>
-                                    <p class="text-gray-300">+1 (555) 123-4567</p>
-                                    <p class="text-gray-300 text-sm">Mon-Fri 9:00 AM - 6:00 PM EST</p>
+                                    <p class="text-gray-300">+91 86601 33173</p>
+                                    <p class="text-gray-300 text-sm">Mon-Fri 9:00 AM - 6:00 PM IST</p>
                                 </div>
                             </div>
 
@@ -245,9 +195,11 @@
                                 </div>
                                 <div class="ml-4">
                                     <h4 class="text-lg font-semibold text-white">Office</h4>
-                                    <p class="text-gray-300">123 Financial District</p>
-                                    <p class="text-gray-300">New York, NY 10004</p>
-                                    <p class="text-gray-300">United States</p>
+                                    <p class="text-gray-300">EQUDATOR</p>
+                                    <p class="text-gray-300">REVA NEST - Technology Business Incubator</p>
+                                    <p class="text-gray-300">Rukmini Knowledge Park, Yelahanka</p>
+                                    <p class="text-gray-300">Kattigenahalli, Bengaluru, Sathanur</p>
+                                    <p class="text-gray-300">Karnataka 560064, India</p>
                                 </div>
                             </div>
                         </div>

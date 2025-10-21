@@ -186,34 +186,79 @@
         .particle:nth-child(9) { left: 90%; animation-delay: 8s; }
     </style>
 </head>
-<body class="font-sans">
-    <!-- Background with floating particles -->
-    <div class="signup-container relative">
-        <div class="floating-particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
+<body class="bg-gray-50 text-gray-900 min-h-screen">
+    <div class="pt-16">
         
-        <!-- Navigation -->
-        <nav class="relative z-20 px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold text-pure-white">
-                    <img src="assets/images/Equdator _Logo.jpg" alt="EQUDATOR Logo" class="w-10 h-10 rounded-lg">
-                    <span class="bg-gradient-to-r from-primary-teal to-golden-yellow bg-clip-text text-transparent">EQUDATOR</span>
-                </a>
-                <div class="flex items-center space-x-4">
-                    <a href="login.html" class="text-pure-white hover:text-primary-teal transition duration-200">Sign In</a>
-                    <a href="index.html" class="text-pure-white hover:text-primary-teal transition duration-200">← Back to Home</a>
+        <!-- Header - Professional Business -->
+        <header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+            <nav class="max-w-6xl mx-auto px-6">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <img src="assets/images/Equdator _Logo.jpg" alt="EQUDATOR Logo" class="w-8 h-8 rounded-lg">
+                        <span class="text-xl font-semibold text-gray-900">EQUDATOR</span>
+                    </a>
+
+                    <!-- Desktop Navigation -->
+                    <div class="hidden lg:flex items-center space-x-8">
+                        <a href="product.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Product</a>
+                        <a href="enhanced-trading-terminal.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Demo</a>
+                        <a href="pricing.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Pricing</a>
+                        <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">About</a>
+                        <a href="contact.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+                    </div>
+
+                    <!-- Authentication -->
+                    <div class="hidden lg:flex items-center space-x-4" id="authNavigation">
+                        <!-- Logged out state -->
+                        <div id="authLoggedOut" class="flex items-center space-x-4">
+                            <a href="login.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Sign in</a>
+                            <a href="signup.html" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors">Get started</a>
+                        </div>
+                        
+                        <!-- Logged in state -->
+                        <div id="authLoggedIn" class="hidden items-center space-x-4">
+                            <a href="dashboard.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Dashboard</a>
+                            <div class="relative group">
+                                <button class="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors">
+                                    <img id="navUserAvatar" src="" alt="User" class="w-8 h-8 rounded-full border border-gray-300">
+                                    <span id="navUserName" class="hidden md:inline text-sm font-medium">User</span>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                                <div class="absolute right-0 mt-2 w-40 bg-white rounded-lg border border-gray-200 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                    <a href="dashboard.html" class="block px-4 py-3 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-t-lg transition-colors">Dashboard</a>
+                                    <a href="#" onclick="handleSignOut()" class="block px-4 py-3 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-b-lg transition-colors">Sign Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="lg:hidden text-gray-600 hover:text-gray-900 p-2" id="mobile-menu-btn">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"></path>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-        </nav>
+
+                <!-- Mobile Menu -->
+                <div class="lg:hidden hidden bg-white border-t border-gray-200" id="mobile-menu">
+                    <div class="px-6 py-6 space-y-1">
+                        <a href="product.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">Product</a>
+                        <a href="enhanced-trading-terminal.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">Demo</a>
+                        <a href="pricing.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">Pricing</a>
+                        <a href="about.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">About</a>
+                        <a href="contact.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">Contact</a>
+                        <div class="pt-6 space-y-3 border-t border-gray-200 mt-4">
+                            <a href="login.html" class="block py-3 px-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors">Sign in</a>
+                            <a href="signup.html" class="block py-3 px-3 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg text-center transition-colors">Get started</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
         
         <!-- Main Content -->
         <div class="relative z-10 min-h-screen px-6 py-12">
@@ -458,6 +503,12 @@
             }, 1000);
         });
         
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
         // Add keyboard navigation support
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {

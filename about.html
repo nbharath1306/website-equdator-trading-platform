@@ -25,67 +25,75 @@
         }
     </script>
 </head>
-<body class="bg-navy-black text-white min-h-screen">
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-xl border-b border-white/10">
-        <nav class="max-w-screen-xl mx-auto px-6">
-            <div class="flex items-center justify-between h-11">
-                <!-- Logo - Apple Style -->
-                <a href="index.html" class="flex items-center space-x-2 group">
-                    <img src="assets/images/Equdator _Logo.jpg" alt="EQUDATOR Logo" class="w-5 h-5 rounded opacity-90 group-hover:opacity-100 transition-opacity duration-200">
-                    <span class="text-sm font-normal text-white/90 group-hover:text-white tracking-wide transition-colors duration-200">EQUDATOR</span>
+<body class="bg-gray-50 text-gray-900 min-h-screen">
+    <!-- Header - Professional Business -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <nav class="max-w-6xl mx-auto px-6">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="assets/images/Equdator _Logo.jpg" alt="EQUDATOR Logo" class="w-8 h-8 rounded-lg">
+                    <span class="text-xl font-semibold text-gray-900">EQUDATOR</span>
                 </a>
 
-                <!-- Desktop Navigation - Apple Style -->
+                <!-- Desktop Navigation -->
                 <div class="hidden lg:flex items-center space-x-8">
-                    <a href="product.html" class="text-xs font-normal text-white/80 hover:text-white transition-colors duration-200 py-2">Product</a>
-
-                    <a href="enhanced-trading-terminal.html" class="text-xs font-normal text-white/80 hover:text-white transition-colors duration-200 py-2">Demo</a>
-                    <a href="pricing.html" class="text-xs font-normal text-white/80 hover:text-white transition-colors duration-200 py-2">Pricing</a>
-                    <a href="https://zerodha.com/varsity/" target="_blank" class="text-xs font-normal text-white/80 hover:text-white transition-colors duration-200 py-2">Varsity</a>
-                    <a href="about.html" class="text-xs font-normal text-white hover:text-white transition-colors duration-200 py-2">About</a>
-                    <a href="contact.html" class="text-xs font-normal text-white/80 hover:text-white transition-colors duration-200 py-2">Contact</a>
+                    <a href="product.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Product</a>
+                    <a href="enhanced-trading-terminal.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Demo</a>
+                    <a href="pricing.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Pricing</a>
+                    <a href="about.html" class="text-sm font-medium text-gray-900 hover:text-gray-900 transition-colors">About</a>
+                    <a href="contact.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
                 </div>
 
-                <!-- Authentication - Apple Style -->
-                <div class="hidden lg:flex items-center space-x-6" id="authNavigation">
+                <!-- Authentication -->
+                <div class="hidden lg:flex items-center space-x-4" id="authNavigation">
                     <!-- Logged out state -->
-                    <div id="authLoggedOut" class="flex items-center space-x-2">
-                        <a href="login.html" class="text-pure-white hover:text-primary-teal transition duration-200 font-medium text-sm">Sign In</a>
-                        <a href="signup.html" class="py-1.5 px-3 rounded-lg bg-gradient-to-r from-primary-teal to-deep-turquoise text-pure-white hover:from-golden-yellow hover:to-primary-teal transition duration-300 shadow-lg shadow-primary-teal/20 font-medium text-sm">Get Started</a>
+                    <div id="authLoggedOut" class="flex items-center space-x-4">
+                        <a href="login.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Sign in</a>
+                        <a href="signup.html" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors">Get started</a>
                     </div>
                     
                     <!-- Logged in state -->
-                    <div id="authLoggedIn" class="hidden items-center space-x-3">
-                        <a href="dashboard.html" class="text-pure-white hover:text-primary-teal transition duration-200 font-medium">Dashboard</a>
+                    <div id="authLoggedIn" class="hidden items-center space-x-4">
+                        <a href="dashboard.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Dashboard</a>
                         <div class="relative group">
-                            <button class="flex items-center space-x-2 text-pure-white hover:text-primary-teal transition duration-200">
-                                <img id="navUserAvatar" src="" alt="User" class="w-8 h-8 rounded-full border-2 border-primary-teal">
-                                <span id="navUserName" class="hidden md:inline">User</span>
+                            <button class="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors">
+                                <img id="navUserAvatar" src="" alt="User" class="w-8 h-8 rounded-full border border-gray-300">
+                                <span id="navUserName" class="hidden md:inline text-sm font-medium">User</span>
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                                 </svg>
                             </button>
-                            <div class="absolute right-0 mt-2 w-48 bg-charcoal-purple/95 backdrop-blur-md rounded-lg border border-primary-teal/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-xl shadow-primary-teal/30 z-50">
-                                <a href="dashboard.html" class="block px-4 py-3 text-pure-white hover:text-primary-teal hover:bg-primary-teal/20 rounded-t-lg transition duration-200">Dashboard</a>
-                                <a href="#" onclick="handleSignOut()" class="block px-4 py-3 text-pure-white hover:text-red-400 hover:bg-red-400/10 rounded-b-lg transition duration-200">Sign Out</a>
+                            <div class="absolute right-0 mt-2 w-40 bg-white rounded-lg border border-gray-200 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <a href="dashboard.html" class="block px-4 py-3 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-t-lg transition-colors">Dashboard</a>
+                                <a href="#" onclick="handleSignOut()" class="block px-4 py-3 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-b-lg transition-colors">Sign Out</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="lg:hidden text-gray-300 hover:text-primary-teal" id="mobile-menu-btn">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                <button class="lg:hidden text-gray-600 hover:text-gray-900 p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"></path>
                     </svg>
                 </button>
             </div>
 
             <!-- Mobile Menu -->
-                        <div class="lg:hidden hidden" id="mobile-menu">
-                <div class="pt-4 pb-2 space-y-2">
-                    <a href="product.html" class="block py-2 text-gray-300 hover:text-primary-teal">Product</a>
+            <div class="lg:hidden hidden bg-white border-t border-gray-200" id="mobile-menu">
+                <div class="px-6 py-6 space-y-1">
+                    <a href="product.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">Product</a>
+                    <a href="enhanced-trading-terminal.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">Demo</a>
+                    <a href="pricing.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">Pricing</a>
+                    <a href="about.html" class="block py-3 text-base font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">About</a>
+                    <a href="contact.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">Contact</a>
+                    <div class="pt-6 space-y-3 border-t border-gray-200 mt-4">
+                        <a href="login.html" class="block py-3 px-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors">Sign in</a>
+                        <a href="signup.html" class="block py-3 px-3 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg text-center transition-colors">Get started</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 

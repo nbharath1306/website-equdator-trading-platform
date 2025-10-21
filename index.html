@@ -1087,7 +1087,7 @@
         }
     </style>
 </head>
-<body class="bg-slate-950 text-gray-100 min-h-screen relative overflow-x-hidden">
+<body class="bg-gray-50 text-gray-900 min-h-screen relative overflow-x-hidden">
     <!-- Floating Navigation Dots -->
     <nav class="floating-nav" id="floatingNav" aria-label="Page navigation">
         <div class="nav-dot active" data-target="hero" role="button" tabindex="0" aria-label="Go to home section">
@@ -1207,73 +1207,71 @@
         </div>
     </div>
     <!-- Header - Beautiful Apple Style -->
-    <!-- Header - Apple-Grade Minimalism -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-xl border-b border-slate-800/50">
-        <nav class="max-w-7xl mx-auto px-8">
+    <!-- Header - Professional Business -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <nav class="max-w-6xl mx-auto px-6">
             <div class="flex items-center justify-between h-16">
                 <!-- Logo -->
-                <a href="index.html" class="flex items-center space-x-3 group">
+                <a href="index.html" class="flex items-center space-x-2">
                     <img src="assets/images/Equdator _Logo.jpg" alt="EQUDATOR Logo" class="w-8 h-8 rounded-lg">
-                    <span class="text-xl font-light text-cyan-400 tracking-wide">EQUDATOR</span>
+                    <span class="text-xl font-semibold text-gray-900">EQUDATOR</span>
                 </a>
 
                 <!-- Desktop Navigation -->
-                <div class="hidden lg:flex items-center space-x-12">
-                    <a href="product.html" class="text-sm font-light text-gray-400 hover:text-gray-100 transition duration-300">Product</a>
-                    <a href="enhanced-trading-terminal.html" class="text-sm font-light text-gray-400 hover:text-gray-100 transition duration-300">Demo</a>
-                    <a href="pricing.html" class="text-sm font-light text-gray-400 hover:text-gray-100 transition duration-300">Pricing</a>
-                    <a href="https://zerodha.com/varsity/" target="_blank" class="text-sm font-light text-gray-400 hover:text-gray-100 transition duration-300">Varsity</a>
-                    <a href="about.html" class="text-sm font-light text-gray-400 hover:text-gray-100 transition duration-300">About</a>
-                    <a href="contact.html" class="text-sm font-light text-gray-400 hover:text-gray-100 transition duration-300">Contact</a>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="product.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Product</a>
+                    <a href="enhanced-trading-terminal.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Demo</a>
+                    <a href="pricing.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Pricing</a>
+                    <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">About</a>
+                    <a href="contact.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
                 </div>
 
                 <!-- Authentication -->
-                <div class="hidden lg:flex items-center space-x-8" id="authNavigation">
+                <div class="hidden lg:flex items-center space-x-4" id="authNavigation">
                     <!-- Logged out state -->
-                    <div id="authLoggedOut" class="flex items-center space-x-8">
-                        <a href="login.html" class="text-sm font-light text-gray-400 hover:text-gray-100 transition duration-300">Sign In</a>
-                        <a href="signup.html" class="py-2 px-6 text-sm font-medium rounded-lg bg-cyan-500 text-white hover:bg-cyan-400 transition duration-300 shadow-lg shadow-cyan-500/20 transform hover:translate-y-[-1px] tracking-wide">Get Started</a>
+                    <div id="authLoggedOut" class="flex items-center space-x-4">
+                        <a href="login.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Sign in</a>
+                        <a href="signup.html" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors">Get started</a>
                     </div>
                     
                     <!-- Logged in state -->
                     <div id="authLoggedIn" class="hidden items-center space-x-4">
-                        <a href="dashboard.html" class="text-xs font-normal text-white/80 hover:text-white transition-colors duration-200">Dashboard</a>
+                        <a href="dashboard.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Dashboard</a>
                         <div class="relative group">
-                            <button class="flex items-center space-x-2 text-white/80 hover:text-white transition-colors duration-200">
-                                <img id="navUserAvatar" src="" alt="User" class="w-6 h-6 rounded-full border border-white/30">
-                                <span id="navUserName" class="hidden md:inline text-xs font-normal">User</span>
-                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                            <button class="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors">
+                                <img id="navUserAvatar" src="" alt="User" class="w-8 h-8 rounded-full border border-gray-300">
+                                <span id="navUserName" class="hidden md:inline text-sm font-medium">User</span>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                                 </svg>
                             </button>
-                            <div class="absolute right-0 mt-2 w-40 bg-black/90 backdrop-blur-xl rounded-lg border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-2xl z-50">
-                                <a href="dashboard.html" class="block px-4 py-2 text-xs text-white/80 hover:text-white hover:bg-white/10 rounded-t-lg transition-colors duration-200">Dashboard</a>
-                                <a href="#" onclick="handleSignOut()" class="block px-4 py-2 text-xs text-white/80 hover:text-white hover:bg-white/10 rounded-b-lg transition-colors duration-200">Sign Out</a>
+                            <div class="absolute right-0 mt-2 w-40 bg-white rounded-lg border border-gray-200 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <a href="dashboard.html" class="block px-4 py-3 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-t-lg transition-colors">Dashboard</a>
+                                <a href="#" onclick="handleSignOut()" class="block px-4 py-3 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-b-lg transition-colors">Sign Out</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Mobile Menu Button - Beautiful -->
-                <button class="lg:hidden text-white hover:text-primary-teal p-2 rounded-xl hover:bg-primary-teal/20 transition-all duration-300 hover:scale-110" id="mobile-menu-btn">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-gray-600 hover:text-gray-900 p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"></path>
                     </svg>
                 </button>
             </div>
 
-            <!-- Mobile Menu - Beautiful & Clean -->
-            <div class="lg:hidden hidden bg-gray-900/98 backdrop-blur-2xl border-t border-gray-700/50" id="mobile-menu">
-                <div class="px-8 py-6 space-y-1">
-                    <a href="product.html" class="block py-4 text-lg font-medium text-white/90 hover:text-primary-teal hover:bg-primary-teal/10 rounded-xl px-4 transition-all duration-300">Product</a>
-                    <a href="enhanced-trading-terminal.html" class="block py-4 text-lg font-medium text-white/90 hover:text-golden-yellow hover:bg-golden-yellow/10 rounded-xl px-4 transition-all duration-300">Demo</a>
-                    <a href="pricing.html" class="block py-4 text-lg font-medium text-white/90 hover:text-primary-teal hover:bg-primary-teal/10 rounded-xl px-4 transition-all duration-300">Pricing</a>
-                    <a href="https://zerodha.com/varsity/" target="_blank" class="block py-4 text-lg font-medium text-white/90 hover:text-deep-turquoise hover:bg-deep-turquoise/10 rounded-xl px-4 transition-all duration-300">Varsity</a>
-                    <a href="about.html" class="block py-4 text-lg font-medium text-white/90 hover:text-golden-yellow hover:bg-golden-yellow/10 rounded-xl px-4 transition-all duration-300">About</a>
-                    <a href="contact.html" class="block py-4 text-lg font-medium text-white/90 hover:text-deep-turquoise hover:bg-deep-turquoise/10 rounded-xl px-4 transition-all duration-300">Contact</a>
-                    <div class="pt-6 space-y-3 border-t border-gray-700/50 mt-4">
-                        <a href="login.html" class="block py-3 px-4 text-lg font-medium text-white/90 hover:text-white hover:bg-white/10 rounded-xl transition-all duration-300">Sign In</a>
-                        <a href="signup.html" class="block py-3 px-4 text-lg font-medium text-white bg-gradient-to-r from-primary-teal to-golden-yellow rounded-xl text-center shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">Get Started</a>
+            <!-- Mobile Menu -->
+            <div class="lg:hidden hidden bg-white border-t border-gray-200" id="mobile-menu">
+                <div class="px-6 py-6 space-y-1">
+                    <a href="product.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">Product</a>
+                    <a href="enhanced-trading-terminal.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">Demo</a>
+                    <a href="pricing.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">Pricing</a>
+                    <a href="about.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">About</a>
+                    <a href="contact.html" class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg px-3 transition-colors">Contact</a>
+                    <div class="pt-6 space-y-3 border-t border-gray-200 mt-4">
+                        <a href="login.html" class="block py-3 px-3 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors">Sign in</a>
+                        <a href="signup.html" class="block py-3 px-3 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg text-center transition-colors">Get started</a>
                     </div>
                 </div>
             </div>
@@ -1282,28 +1280,28 @@
 
     <!-- Main Content -->
     <main class="pt-24 relative z-10">
-        <!-- Hero Section - Apple-Grade Minimalism -->
+        <!-- Hero Section - Professional Business -->
         <section class="container mx-auto px-8 py-32 text-center">
-            <div class="max-w-4xl mx-auto space-y-12">
+            <div class="max-w-4xl mx-auto space-y-8">
                 <!-- Main Headline -->
-                <h1 class="text-5xl md:text-7xl font-extralight text-gray-100 leading-tight tracking-tight">
-                    Revolutionary 
-                    <span class="text-cyan-400 font-light">AI Trading</span>
-                    <br class="hidden md:block">Platform
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+                    The Future of 
+                    <span class="text-blue-600">AI Trading</span>
+                    <br class="hidden md:block">is Here
                 </h1>
                 
                 <!-- Subheading -->
-                <p class="text-xl md:text-2xl font-light text-gray-400 leading-relaxed max-w-3xl mx-auto">
-                    Transform your trading strategy with intelligent algorithms, 
-                    real-time market analysis, and data-driven insights.
+                <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                    Advanced algorithms meet intuitive design. Transform your trading strategy with 
+                    real-time market analysis and intelligent automation.
                 </p>
                 
                 <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                    <a href="signup.html" class="py-4 px-10 text-xl font-medium rounded-lg bg-cyan-500 text-white hover:bg-cyan-400 transition duration-300 shadow-lg shadow-cyan-500/20 transform hover:translate-y-[-1px] active:scale-98 tracking-wide">
-                        Start Trading
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+                    <a href="signup.html" class="py-3 px-8 text-lg font-semibold rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-lg">
+                        Start Free Trial
                     </a>
-                    <a href="enhanced-trading-terminal.html" class="py-4 px-10 text-xl font-light text-gray-300 hover:text-gray-100 transition duration-300 border border-gray-600 hover:border-gray-400 rounded-lg">
+                    <a href="enhanced-trading-terminal.html" class="py-3 px-8 text-lg font-medium text-gray-700 hover:text-gray-900 transition-colors border border-gray-300 hover:border-gray-400 rounded-lg">
                         View Demo
                     </a>
                 </div>
@@ -1319,41 +1317,43 @@
         <!-- Key Features -->
         <section id="features" class="container mx-auto px-6 py-20 relative">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-6xl font-bold text-pure-white mb-6 animate-slide-up glow-text">
-                    Powered by <span class="bg-gradient-to-r from-primary-teal via-golden-yellow to-deep-turquoise bg-clip-text text-transparent">AI Innovation</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Powered by <span class="text-blue-600">AI Innovation</span>
                 </h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-primary-teal to-golden-yellow mx-auto animate-pulse-slow"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Advanced algorithms and intelligent automation designed for modern traders
+                </p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-xl bg-gradient-to-br from-charcoal-purple/60 to-navy-black/80 backdrop-blur-md border border-primary-teal/40 shadow-xl hover:shadow-primary-teal/20 transition duration-500 animate-slide-up hover:border-teal-light/60 transform hover:scale-105">
-                    <div class="w-16 h-16 bg-gradient-to-br from-primary-teal/30 to-teal-light/20 rounded-lg flex items-center justify-center mb-6 shadow-lg shadow-primary-teal/10">
-                        <svg class="w-8 h-8 text-primary-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="p-8 rounded-xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold text-pure-white mb-4">AI-Powered Analytics</h3>
-                    <p class="text-pure-white/80 leading-relaxed">Advanced machine learning algorithms analyze market patterns and provide intelligent trading insights in <span class="text-primary-teal font-semibold">real-time</span>.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">AI-Powered Analytics</h3>
+                    <p class="text-gray-600 leading-relaxed">Advanced machine learning algorithms analyze market patterns and provide intelligent trading insights in real-time.</p>
                 </div>
 
-                <div class="p-8 rounded-xl bg-gradient-to-br from-charcoal-purple/60 to-navy-black/80 backdrop-blur-md border border-golden-yellow/40 shadow-xl hover:shadow-golden-yellow/20 transition duration-500 animate-slide-up hover:border-golden-yellow/60 transform hover:scale-105" style="animation-delay: 0.1s;">
-                    <div class="w-16 h-16 bg-gradient-to-br from-golden-yellow/30 to-golden-yellow/20 rounded-lg flex items-center justify-center mb-6 shadow-lg shadow-golden-yellow/10">
-                        <svg class="w-8 h-8 text-golden-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="p-8 rounded-xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold text-pure-white mb-4">Lightning Fast</h3>
-                    <p class="text-pure-white/80 leading-relaxed">Execute trades with <span class="text-golden-yellow font-semibold">millisecond precision</span> and access real-time market data with our high-performance infrastructure.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Lightning Fast</h3>
+                    <p class="text-gray-600 leading-relaxed">Execute trades with millisecond precision and access real-time market data with our high-performance infrastructure.</p>
                 </div>
 
-                <div class="p-8 rounded-xl bg-gradient-to-br from-charcoal-purple/60 to-navy-black/80 backdrop-blur-md border border-deep-turquoise/40 shadow-xl hover:shadow-deep-turquoise/20 transition duration-500 animate-slide-up hover:border-deep-turquoise/60 transform hover:scale-105" style="animation-delay: 0.2s;">
-                    <div class="w-16 h-16 bg-gradient-to-br from-deep-turquoise/30 to-deep-turquoise/20 rounded-lg flex items-center justify-center mb-6 shadow-lg shadow-deep-turquoise/10">
-                        <svg class="w-8 h-8 text-deep-turquoise" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="p-8 rounded-xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold text-pure-white mb-4">Secure & Reliable</h3>
-                    <p class="text-pure-white/80 leading-relaxed">Bank-grade security with <span class="text-deep-turquoise font-semibold">99.9% uptime</span> guarantee ensures your investments are always protected and accessible.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Secure & Reliable</h3>
+                    <p class="text-gray-600 leading-relaxed">Bank-grade security with 99.9% uptime guarantee ensures your investments are always protected and accessible.</p>
                 </div>
             </div>
         </section>
